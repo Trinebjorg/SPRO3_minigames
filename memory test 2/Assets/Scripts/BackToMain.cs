@@ -8,25 +8,18 @@ using UnityEngine.SceneManagement;
 
 public class BackToMain : MonoBehaviour
 {
-    //Coding for Addbuttons
-
-    //   [SerializeField]
-    //   private Transform MainField_Panel;
-    //   [SerializeField]
-    //   private GameObject Exit;
-    //   [SerializeField]
-    //   private GameObject Break;
+    
     public Button btn;
 
-    public void SceneChangeOnClick() {
-       
+    public void JumpToMemory() {
 
-        //change scene for Exit_button
-        if (btn != null) {
-            if (btn.name == "Exit_Button") {
-                Application.Quit();
-            }
+        SceneManager.LoadScene(sceneName: "MemoryGame");
 
-        }
     }
+    public void JumpToMain()
+    {
+        SceneManager.LoadScene(sceneName: "MainMenu");
+
+    }
+
 }

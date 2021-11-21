@@ -2116,6 +2116,7 @@ Preloading 1 native plugins for Editor in 0.22 ms.
 Unloading 2018 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 93.3 MB.
 System memory in use after: 93.4 MB.
+<<<<<<< Updated upstream
 
 Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 2610.
 Total: 4.361600 ms (FindLiveObjects: 0.256400 ms CreateObjectMapping: 0.097100 ms MarkObjects: 3.973600 ms  DeleteObjects: 0.033000 ms)
@@ -2190,6 +2191,11 @@ System memory in use after: 93.4 MB.
 
 Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 2613.
 Total: 4.181300 ms (FindLiveObjects: 0.281600 ms CreateObjectMapping: 0.077200 ms MarkObjects: 3.794900 ms  DeleteObjects: 0.026300 ms)
+=======
+
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 2610.
+Total: 4.361600 ms (FindLiveObjects: 0.256400 ms CreateObjectMapping: 0.097100 ms MarkObjects: 3.973600 ms  DeleteObjects: 0.033000 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 

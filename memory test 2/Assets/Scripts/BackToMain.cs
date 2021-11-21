@@ -1,19 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+
 
 public class BackToMain : MonoBehaviour
 {
-    //Coding for Addbuttons
+    
+    public Button btn;
 
-    [SerializeField]
-    private Transform MainField_Panel;
+    public void JumpToMemory() {
 
-    [SerializeField]
-    private GameObject Exit;
+        SceneManager.LoadScene(sceneName: "MemoryGame");
 
-    [SerializeField]
-    private GameObject Break;
+    }
+    public void JumpToMain()
+    {
+        SceneManager.LoadScene(sceneName: "MainMenu");
 
+    }
 
 }

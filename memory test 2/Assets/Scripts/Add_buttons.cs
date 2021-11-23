@@ -13,7 +13,7 @@ public class Add_buttons : MonoBehaviour
 
     private void Awake()
     {
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i < 12; i++)
         {
             GameObject button = Instantiate(btn);
             button.name = "" + i;

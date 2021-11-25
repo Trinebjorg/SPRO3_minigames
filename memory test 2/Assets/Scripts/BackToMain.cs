@@ -9,7 +9,6 @@ using UnityEngine.SceneManagement;
 public class BackToMain : MonoBehaviour
 {
     
-    public Button btn;
 
     public void JumpToMemory() {
 
@@ -20,6 +19,11 @@ public class BackToMain : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName: "MainMenu");
 
+    }
+
+    public void JumpToMem_Difficulty()
+    {
+        SceneManager.LoadScene(sceneName: "Difficulty_mem");
     }
 
 }

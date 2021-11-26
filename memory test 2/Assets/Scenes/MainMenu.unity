@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1029,8 +1029,8 @@ GameObject:
   - component: {fileID: 425505827}
   - component: {fileID: 425505826}
   - component: {fileID: 425505825}
-  - component: {fileID: 425505824}
   - component: {fileID: 425505829}
+  - component: {fileID: 425505824}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1050,7 +1050,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 386a423829068354bb6b40cdc1d07dae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  btn: {fileID: 0}
 --- !u!114 &425505825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2937,7 +2936,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 425505824}
         m_TargetAssemblyTypeName: BackToMain, Assembly-CSharp
-        m_MethodName: JumpToMemory
+        m_MethodName: JumpToMem_Difficulty
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -26,4 +26,8 @@ public class BackToMain : MonoBehaviour
         SceneManager.LoadScene(sceneName: "Difficulty_mem");
     }
 
+    public void JumpToCloverCatch()
+    {
+        SceneManager.LoadScene(sceneName: "CloverCatch");
+    }
 }

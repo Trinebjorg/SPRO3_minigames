@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MemoryGame.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Difficulty_mem.unity
+    guid: c0bdb5bd92d6a1e43860c47f1847ced7
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 65104d7d531100143a8d9066f328564b,
       type: 2}

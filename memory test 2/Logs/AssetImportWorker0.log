@@ -151,3 +151,4 @@ Received Import Request.
 Start importing Assets/Scenes/Difficulty_mem.unity using Guid(c0bdb5bd92d6a1e43860c47f1847ced7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c94cee26cf2649cf1976e101f486e654') in 0.022619 seconds 
   Import took 0.029499 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

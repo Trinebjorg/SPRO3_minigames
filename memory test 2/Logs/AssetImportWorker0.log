@@ -527,3 +527,84 @@ Received Import Request.
 Start importing Assets/AutoHand/Examples/Scenes/XR/Prefabs/RobotHand (XR)(L).prefab using Guid(6d7709dc9fe181a4eb3a598b435d583d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a478e62d665dd0586d1c9e2b37fdbf5d') in 0.104458 seconds 
   Import took 0.111388 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 4208.153731 seconds.
+  path: Assets/Scenes/CloverCatch.unity
+  artifactKey: Guid(c334840ec8aa0b448af46758c3fd4c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/CloverCatch.unity using Guid(c334840ec8aa0b448af46758c3fd4c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfdb985d9b440fa80de4dd2a6bcd6be5') in 0.066259 seconds 
+  Import took 0.229547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.011273 seconds.
+  path: Assets/Resources/Sprites/Cards/258867338_5222414144442670_2622544522401211354_n.png
+  artifactKey: Guid(e9087620300d32941a064c582d3b6077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Cards/258867338_5222414144442670_2622544522401211354_n.png using Guid(e9087620300d32941a064c582d3b6077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69139d72d757048df671a40d18855f32') in 0.309200 seconds 
+  Import took 0.318096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/AutoHand/Examples/Materials/Physics/Alley.physicMaterial
+  artifactKey: Guid(5888f40e268ccb941927a1abf0b1ef20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AutoHand/Examples/Materials/Physics/Alley.physicMaterial using Guid(5888f40e268ccb941927a1abf0b1ef20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e7e58901e94553c83201b5a0ba61367') in 0.019237 seconds 
+  Import took 0.027366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000530 seconds.
+  path: Assets/Resources/Sprites/Cards/259000617_444394933767204_4239721915918621608_n.png
+  artifactKey: Guid(1970234d4c37623478609302e0effe95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Cards/259000617_444394933767204_4239721915918621608_n.png using Guid(1970234d4c37623478609302e0effe95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ab65b0332d73a372bf5e56030c88ef3') in 0.041050 seconds 
+  Import took 0.050895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000518 seconds.
+  path: Assets/Resources/Sprites/Cards/259146443_7308850289140552_8562908765106660308_n.png
+  artifactKey: Guid(4888c59721e58f24ba2a1ec2b6df15ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Cards/259146443_7308850289140552_8562908765106660308_n.png using Guid(4888c59721e58f24ba2a1ec2b6df15ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a51967cd7b5fd5d02ae9d15489708bf') in 0.045161 seconds 
+  Import took 0.057238 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000458 seconds.
+  path: Assets/Resources/Sprites/Cards/259198165_202206322090623_7827846949642866042_n.png
+  artifactKey: Guid(a8f6a541ca4d6034882bd50c54b5e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Cards/259198165_202206322090623_7827846949642866042_n.png using Guid(a8f6a541ca4d6034882bd50c54b5e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84f9884317f9c2712a162acb92b14a3e') in 0.038637 seconds 
+  Import took 0.047642 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000544 seconds.
+  path: Assets/Resources/Sprites/Cards/260149196_1808571656019077_1227184584703863066_n.png
+  artifactKey: Guid(32678cce13fa4cb479b4fb33987b7ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Cards/260149196_1808571656019077_1227184584703863066_n.png using Guid(32678cce13fa4cb479b4fb33987b7ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f056a1a4e61ede6b7e319a2140dec1f') in 0.051515 seconds 
+  Import took 0.061688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000739 seconds.
+  path: Assets/Resources/Sprites/Cards/259152180_454640616184414_6316656840591604904_n.png
+  artifactKey: Guid(f90d701122f064842ad13a30a318175b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Cards/259152180_454640616184414_6316656840591604904_n.png using Guid(f90d701122f064842ad13a30a318175b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20e81a190864759ec827441ee2d19c1d') in 0.049827 seconds 
+  Import took 0.061899 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 100.201539 seconds.
+  path: Assets/Scenes/MainMenu.unity
+  artifactKey: Guid(568799f3c27d13d4aa53256e84ff98c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainMenu.unity using Guid(568799f3c27d13d4aa53256e84ff98c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '551eae2f50aa7c035fb587c022b82901') in 0.016224 seconds 
+  Import took 0.029068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 862.154831 seconds.
+  path: Assets/AutoHand/Examples/Scenes/OpenXR/Scripts/OpenXRAutoHandFingerBender.cs
+  artifactKey: Guid(390319e4c7788aa4b830a191e6251b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AutoHand/Examples/Scenes/OpenXR/Scripts/OpenXRAutoHandFingerBender.cs using Guid(390319e4c7788aa4b830a191e6251b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d2a7b3621ef87a361cd397fc0b2669d') in 0.017020 seconds 
+  Import took 0.030414 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

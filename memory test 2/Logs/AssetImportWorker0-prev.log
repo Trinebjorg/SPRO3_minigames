@@ -1,90 +1,86 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.20f1 (41c4e627c95f) revision 4310246'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.1348; Version 2009; 64bit' Language: 'en' Physical Memory: 7990 MB
+OS: 'Windows 10 Home; OS build 19042.1348; Version 2009; 64bit' Language: 'en' Physical Memory: 7997 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity 2020.3.20f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.20f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/janni/Documents/GitHub/SPRO3_minigames/memory test 2
+C:/Users/trine/OneDrive/Dokumenter/GitHub/SPRO3_minigames/memory test 2
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59677
-Successfully changed project path to: C:/Users/janni/Documents/GitHub/SPRO3_minigames/memory test 2
-C:/Users/janni/Documents/GitHub/SPRO3_minigames/memory test 2
+55192
+Successfully changed project path to: C:/Users/trine/OneDrive/Dokumenter/GitHub/SPRO3_minigames/memory test 2
+C:/Users/trine/OneDrive/Dokumenter/GitHub/SPRO3_minigames/memory test 2
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 464.53 ms, found 10 plugins.
-Preloading 1 native plugins for Editor in 2.71 ms.
+Refreshing native plugins compatible for Editor in 105.02 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 12.34 ms.
 Initialize engine version: 2020.3.20f1 (41c4e627c95f)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2020.3.20f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/janni/Documents/GitHub/SPRO3_minigames/memory test 2/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/trine/OneDrive/Dokumenter/GitHub/SPRO3_minigames/memory test 2/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) UHD Graphics 620 (ID=0x3ea0)
+    Renderer: Intel(R) UHD Graphics (ID=0x8a56)
     Vendor:   
-    VRAM:     3995 MB
-    Driver:   25.20.100.6519
+    VRAM:     3998 MB
+    Driver:   30.0.100.9805
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity 2020.3.20f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity 2020.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity 2020.3.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56356
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56552
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity 2020.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004551 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004503 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 73.70 ms, found 10 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
+Refreshing native plugins compatible for Editor in 49.22 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.661 seconds
+- Completed reload, in  6.813 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2661ms)
-		BeginReloadAssembly (95ms)
+	ReloadAssembly (6813ms)
+		BeginReloadAssembly (59ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (628ms)
-			LoadAssemblies (94ms)
+		EndReloadAssembly (559ms)
+			LoadAssemblies (56ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (219ms)
+			SetupTypeCache (142ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (247ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (250ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (74ms)
-				BeforeProcessingInitializeOnLoad (21ms)
-				ProcessInitializeOnLoadAttributes (107ms)
-				ProcessInitializeOnLoadMethodAttributes (41ms)
+				RefreshPlugins (49ms)
+				BeforeProcessingInitializeOnLoad (36ms)
+				ProcessInitializeOnLoadAttributes (132ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.028576 seconds.
+Registered in 0.022381 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 62.12 ms, found 10 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-[XR] OculusXRPlugin: registering subsystems
-[XR] Unable to register display lifecyle provider: [1]
-[XR] Oculus Input lifecycle provider registered.
-[XR] Unable to register input lifecyle provider: [1]
+Refreshing native plugins compatible for Editor in 58.69 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\janni\Documents\GitHub\SPRO3_minigames\memory test 2\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:250 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\janni\Documents\GitHub\SPRO3_minigames\memory test 2\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:235 
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\trine\OneDrive\Dokumenter\GitHub\SPRO3_minigames\memory test 2\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\trine\OneDrive\Dokumenter\GitHub\SPRO3_minigames\memory test 2\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:235 
   at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
    --- End of inner exception stack trace ---
@@ -98,45 +94,45 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.632 seconds
+- Completed reload, in  1.606 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1634ms)
-		BeginReloadAssembly (168ms)
+	ReloadAssembly (1609ms)
+		BeginReloadAssembly (173ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (1370ms)
-			LoadAssemblies (184ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (1369ms)
+			LoadAssemblies (190ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (364ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (77ms)
-			SetupLoadedEditorAssemblies (538ms)
+			SetupTypeCache (361ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (606ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (62ms)
-				BeforeProcessingInitializeOnLoad (106ms)
-				ProcessInitializeOnLoadAttributes (336ms)
-				ProcessInitializeOnLoadMethodAttributes (23ms)
+				RefreshPlugins (59ms)
+				BeforeProcessingInitializeOnLoad (120ms)
+				ProcessInitializeOnLoadAttributes (391ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
-Refreshing native plugins compatible for Editor in 0.91 ms, found 10 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.75 ms, found 10 plugins.
 Preloading 1 native plugins for Editor in 0.14 ms.
-Unloading 2567 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2566 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 109.4 MB.
 System memory in use after: 109.5 MB.
 
-Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3009.
-Total: 5.524300 ms (FindLiveObjects: 0.420800 ms CreateObjectMapping: 0.165600 ms MarkObjects: 4.783400 ms  DeleteObjects: 0.153100 ms)
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3008.
+Total: 5.178300 ms (FindLiveObjects: 0.429100 ms CreateObjectMapping: 0.187300 ms MarkObjects: 4.376300 ms  DeleteObjects: 0.183900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -150,33 +146,9 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/MainMenu.unity
-  artifactKey: Guid(568799f3c27d13d4aa53256e84ff98c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainMenu.unity using Guid(568799f3c27d13d4aa53256e84ff98c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3f430f21ec0762778468d889045aafb') in 0.024638 seconds 
-  Import took 0.030127 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 549.711820 seconds.
-  path: Assets/Scenes/Memory_Win.unity
-  artifactKey: Guid(340e9e602737af0458af95116f4bc69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Memory_Win.unity using Guid(340e9e602737af0458af95116f4bc69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c2bdca8c3f65b2e3dff1ce03d534528') in 0.014909 seconds 
-  Import took 0.022630 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.243268 seconds.
-  path: Assets/Scenes/MemoryGame.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MemoryGame.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b80f55372687cd71ac25b6197774aab') in 0.016749 seconds 
-  Import took 0.023916 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1919.830520 seconds.
   path: Assets/Scenes/Difficulty_mem.unity
   artifactKey: Guid(c0bdb5bd92d6a1e43860c47f1847ced7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Difficulty_mem.unity using Guid(c0bdb5bd92d6a1e43860c47f1847ced7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7e471e4b8d54a6e511feca4961ff00f') in 0.015104 seconds 
-  Import took 0.023302 seconds .
+Start importing Assets/Scenes/Difficulty_mem.unity using Guid(c0bdb5bd92d6a1e43860c47f1847ced7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c94cee26cf2649cf1976e101f486e654') in 0.022619 seconds 
+  Import took 0.029499 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

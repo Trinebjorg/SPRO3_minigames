@@ -44,13 +44,13 @@ public class Hand1 : MonoBehaviour
 
     void AnimateHand()
     {
-        if (gripCurrent != gripTarget)
+        if (gripCurrent != gripTarget) //Check if grip button is pressed
         {
             gripCurrent = Mathf.MoveTowards(gripCurrent, gripTarget, Time.deltaTime * Speed);
             animator.SetFloat(animatorGripParam, gripCurrent);
         }
         
-        if (triggerCurrent != triggerTarget)
+        if (triggerCurrent != triggerTarget) // Same here
         {
             triggerCurrent = Mathf.MoveTowards(triggerCurrent, triggerTarget, Time.deltaTime * Speed);
             animator.SetFloat(animatorTriggerParam, triggerCurrent);

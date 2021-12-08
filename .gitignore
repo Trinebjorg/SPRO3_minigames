@@ -27,7 +27,7 @@ sysinfo.txt
 *.userprefs
 *.pidb
 .DS_Store
-
+.log
 ###
 # OS generated
 ###
@@ -39,14 +39,4 @@ sysinfo.txt
 Icon?
 ehthumbs.db
 Thumbs.db
-memory test 2/Logs/AssetImportWorker0-prev.log
-memory test 2/Logs/AssetImportWorker0.log
-memory test 2/Logs/shadercompiler-AssetImportWorker0.log
-memory test 2/Logs/shadercompiler-UnityShaderCompiler.exe0.log
-memory test 2/Logs/shadercompiler-UnityShaderCompiler.exe1.log
-memory test 2/Logs/shadercompiler-UnityShaderCompiler.exe2.log
-memory test 2/Logs/shadercompiler-UnityShaderCompiler.exe3.log
-memory test 2/Logs/shadercompiler-UnityShaderCompiler.exe4.log
-memory test 2/Logs/shadercompiler-UnityShaderCompiler.exe5.log
-memory test 2/Logs/shadercompiler-UnityShaderCompiler.exe6.log
-memory test 2/Logs/shadercompiler-UnityShaderCompiler.exe7.log
+

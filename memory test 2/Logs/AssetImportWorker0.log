@@ -436,3 +436,4 @@ Received Import Request.
 Start importing Assets/Resources/Sprites/Cards/259152180_454640616184414_6316656840591604904_n.png using Guid(f90d701122f064842ad13a30a318175b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20e81a190864759ec827441ee2d19c1d') in 0.036544 seconds 
   Import took 0.046522 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

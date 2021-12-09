@@ -384,6 +384,7 @@ GameObject:
   - component: {fileID: 5457610785231033771}
   - component: {fileID: 1414463544888214935}
   - component: {fileID: 1871829769041678465}
+  - component: {fileID: 5487096224702707289}
   m_Layer: 0
   m_Name: Index
   m_TagString: Untagged
@@ -470,6 +471,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04, y: 0.02, z: 0.02}
   m_Center: {x: -0.02, y: 0, z: 0.0015}
+--- !u!114 &5487096224702707289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272907027502396831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7efad4f49bdc399409aae0e128b0ad2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tip: {fileID: 0}
+  tipRadius: 0.01
+  bendOffset: 0
+  fingerSmoothSpeed: 1
+  secondaryOffset: 0
+  minGripRotPose: []
+  minGripPosPose: []
+  maxGripRotPose: []
+  maxGripPosPose: []
+  fingerJoints: []
 --- !u!1 &1813792077443834387
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,6 +505,7 @@ GameObject:
   - component: {fileID: 2901741127085864212}
   - component: {fileID: 3259705955193180653}
   - component: {fileID: 4973444983561072973}
+  - component: {fileID: 1306100714039778924}
   m_Layer: 0
   m_Name: Thumb
   m_TagString: Untagged
@@ -568,6 +592,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.05, y: 0.02, z: 0.02}
   m_Center: {x: -0.02, y: 0, z: 0}
+--- !u!114 &1306100714039778924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813792077443834387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7efad4f49bdc399409aae0e128b0ad2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tip: {fileID: 0}
+  tipRadius: 0.01
+  bendOffset: 0
+  fingerSmoothSpeed: 1
+  secondaryOffset: 0
+  minGripRotPose: []
+  minGripPosPose: []
+  maxGripRotPose: []
+  maxGripPosPose: []
+  fingerJoints: []
 --- !u!1 &2218293816570526395
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,13 +742,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2440931180534758656}
-  m_LocalRotation: {x: 0.6416945, y: -0.7662578, z: -0.031648926, w: -0.008686245}
-  m_LocalPosition: {x: -0.0602, y: -0.0065, z: -0.0255}
+  m_LocalRotation: {x: 0.66868675, y: 0.020886278, z: -0.74241215, w: -0.035300758}
+  m_LocalPosition: {x: -0.060205232, y: -0.006502303, z: -0.025503432}
   m_LocalScale: {x: 0.9600002, y: 0.9600002, z: 0.96000046}
   m_Children: []
   m_Father: {fileID: 1982879836239456625}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0.83, y: 188.079, z: -80.365}
+  m_LocalEulerAnglesHint: {x: -0.928, y: 276.01898, z: -184.609}
 --- !u!1 &3445901078671437574
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,6 +761,7 @@ GameObject:
   - component: {fileID: 5553579449110825140}
   - component: {fileID: 3723388403821997458}
   - component: {fileID: 7541459017946322226}
+  - component: {fileID: 6513411873898980936}
   m_Layer: 0
   m_Name: Middle
   m_TagString: Untagged
@@ -801,6 +848,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04, y: 0.02, z: 0.02}
   m_Center: {x: -0.02, y: 0, z: 0.0015}
+--- !u!114 &6513411873898980936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3445901078671437574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7efad4f49bdc399409aae0e128b0ad2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tip: {fileID: 0}
+  tipRadius: 0.01
+  bendOffset: 0
+  fingerSmoothSpeed: 1
+  secondaryOffset: 0
+  minGripRotPose: []
+  minGripPosPose: []
+  maxGripRotPose: []
+  maxGripPosPose: []
+  fingerJoints: []
 --- !u!1 &4427432614651021071
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,6 +912,7 @@ GameObject:
   - component: {fileID: 5460294669156321847}
   - component: {fileID: 2023375345129109065}
   - component: {fileID: 3273353939433440412}
+  - component: {fileID: 7153581531409885062}
   m_Layer: 0
   m_Name: Pinky
   m_TagString: Untagged
@@ -929,6 +999,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04, y: 0.02, z: 0.02}
   m_Center: {x: -0.01, y: 0, z: 0.0015}
+--- !u!114 &7153581531409885062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4730105175238802076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7efad4f49bdc399409aae0e128b0ad2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tip: {fileID: 0}
+  tipRadius: 0.01
+  bendOffset: 0
+  fingerSmoothSpeed: 1
+  secondaryOffset: 0
+  minGripRotPose: []
+  minGripPosPose: []
+  maxGripRotPose: []
+  maxGripPosPose: []
+  fingerJoints: []
 --- !u!1 &4832715926935601055
 GameObject:
   m_ObjectHideFlags: 0
@@ -1506,6 +1598,7 @@ GameObject:
   - component: {fileID: 3481152275737404598}
   - component: {fileID: 7709464210337984997}
   - component: {fileID: 1601564787854395573}
+  - component: {fileID: 536601618013385373}
   m_Layer: 0
   m_Name: Ring
   m_TagString: Untagged
@@ -1592,6 +1685,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04, y: 0.02, z: 0.02}
   m_Center: {x: -0.01, y: 0, z: 0.0015}
+--- !u!114 &536601618013385373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8266913655063000168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7efad4f49bdc399409aae0e128b0ad2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tip: {fileID: 0}
+  tipRadius: 0.01
+  bendOffset: 0
+  fingerSmoothSpeed: 1
+  secondaryOffset: 0
+  minGripRotPose: []
+  minGripPosPose: []
+  maxGripRotPose: []
+  maxGripPosPose: []
+  fingerJoints: []
 --- !u!1 &8685472768745978638
 GameObject:
   m_ObjectHideFlags: 0
@@ -1606,6 +1721,7 @@ GameObject:
   - component: {fileID: 8904729553806191643}
   - component: {fileID: 165222652473334800}
   - component: {fileID: 2327616046188920004}
+  - component: {fileID: 1456546226559169262}
   m_Layer: 0
   m_Name: RobotHand (No Controller)
   m_TagString: Untagged
@@ -1639,14 +1755,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8685472768745978638}
   serializedVersion: 2
-  m_Mass: 10
+  m_Mass: 20
   m_Drag: 10
   m_AngularDrag: 35
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 2
+  m_CollisionDetection: 1
 --- !u!114 &9201711370266972039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1711,6 +1827,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  useSmoothReturn: 0
+  smoothReturnSpeed: 1
   poseIndex: 0
   ignoreMe1: 0
 --- !u!114 &8904729553806191643
@@ -1806,6 +1924,28 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.15
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1456546226559169262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8685472768745978638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7efad4f49bdc399409aae0e128b0ad2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tip: {fileID: 0}
+  tipRadius: 0.01
+  bendOffset: 0
+  fingerSmoothSpeed: 1
+  secondaryOffset: 0
+  minGripRotPose: []
+  minGripPosPose: []
+  maxGripRotPose: []
+  maxGripPosPose: []
+  fingerJoints: []
 --- !u!1 &8783913793033214316
 GameObject:
   m_ObjectHideFlags: 0

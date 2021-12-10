@@ -520,7 +520,7 @@ GameObject:
   - component: {fileID: 164048299}
   - component: {fileID: 164048298}
   m_Layer: 5
-  m_Name: Puzzle Buttons Holder 1
+  m_Name: Puzzle Buttons Holder 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1880,7 +1880,7 @@ GameObject:
   - component: {fileID: 652269474}
   - component: {fileID: 652269473}
   m_Layer: 5
-  m_Name: Puzzle Buttons Holder 1
+  m_Name: Puzzle Buttons Holder 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2055,7 +2055,7 @@ GameObject:
   - component: {fileID: 658799863}
   - component: {fileID: 658799862}
   m_Layer: 5
-  m_Name: Puzzle Buttons Holder 1
+  m_Name: Puzzle Buttons Holder 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4029,7 +4029,7 @@ GameObject:
   - component: {fileID: 1121817533}
   - component: {fileID: 1121817532}
   m_Layer: 5
-  m_Name: Puzzle Buttons Holder 1
+  m_Name: Puzzle Buttons Holder 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5707,12 +5707,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1419280731}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.899349, y: 1.4641023, z: -6.645376}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.8993487, y: 1.4641023, z: -6.645376}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1419280733
 MonoBehaviour:
@@ -7305,6 +7305,7 @@ GameObject:
   - component: {fileID: 1861746478}
   - component: {fileID: 1861746477}
   - component: {fileID: 1861746479}
+  - component: {fileID: 1861746480}
   m_Layer: 0
   m_Name: PuzzleGameController
   m_TagString: Untagged
@@ -7324,6 +7325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15eb599615b5b2f4d8fc5ed8edb633dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layoutPuzzleButtons: {fileID: 1861746480}
   puzzleLevelSelectPanel: {fileID: 2011790101}
   puzzleLevelSelectAnim: {fileID: 2011790103}
   puzzleGamePanel1: {fileID: 1827043903}
@@ -7348,7 +7350,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1861746479
 MonoBehaviour:
@@ -7362,8 +7364,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aee772c53855d5c4aae51557365ab092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layoutPuzzleButtons: {fileID: 1861746480}
   puzzleButton: {fileID: 3617999397818343897, guid: fe1ecae1ee0539649974e5c87c8e9e3f,
     type: 3}
+--- !u!114 &1861746480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861746476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2864e86ff20882945a43c00d1f8b99d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleLevel1: {fileID: 1765820917}
+  puzzleLevel2: {fileID: 658799861}
+  puzzleLevel3: {fileID: 164048297}
+  puzzleLevel4: {fileID: 1121817531}
+  puzzleLevel5: {fileID: 652269472}
+  level1Buttons: []
+  level2Buttons: []
+  level3Buttons: []
+  level4Buttons: []
+  level5Buttons: []
+  level1Anims: []
+  level2Anims: []
+  level3Anims: []
+  level4Anims: []
+  level5Anims: []
+  puzzleButtonsBacksideImages:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1883190452
 GameObject:
   m_ObjectHideFlags: 0
@@ -7610,7 +7644,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1948430222
 PrefabInstance:

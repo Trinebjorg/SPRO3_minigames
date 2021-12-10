@@ -2266,9 +2266,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: -6.02}
   m_LocalScale: {x: 0.009, y: 0.009, z: 0.009}
   m_Children:
+  - {fileID: 1141247174}
   - {fileID: 2011790102}
   - {fileID: 1516140145}
-  - {fileID: 1141247174}
   - {fileID: 1827043904}
   - {fileID: 450500446}
   - {fileID: 1810645900}
@@ -4285,7 +4285,7 @@ RectTransform:
   - {fileID: 1143378663}
   - {fileID: 429078759}
   m_Father: {fileID: 678735545}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5848,7 +5848,7 @@ RectTransform:
   - {fileID: 502470062}
   - {fileID: 1641819625}
   m_Father: {fileID: 678735545}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -7395,9 +7395,9 @@ MonoBehaviour:
   level4Anims: []
   level5Anims: []
   puzzleButtonsBacksideImages:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 2b4005fa2ea337f42936ccaf2cf03063, type: 3}
+  - {fileID: 21300000, guid: a3fb342161ce58c449bab435e03a23a0, type: 3}
+  - {fileID: 21300000, guid: 912b26fa43e466248a039ac8d84b1c58, type: 3}
 --- !u!1 &1883190452
 GameObject:
   m_ObjectHideFlags: 0
@@ -8417,7 +8417,7 @@ RectTransform:
   - {fileID: 1811356165}
   - {fileID: 558260465}
   m_Father: {fileID: 678735545}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}

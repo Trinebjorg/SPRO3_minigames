@@ -1,0 +1,820 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.20f1 (41c4e627c95f) revision 4310246'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.1348; Version 2009; 64bit' Language: 'en' Physical Memory: 7997 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.20f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/trine/OneDrive/Dokumenter/GitHub/SPRO3_minigames/memory test 2
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+59093
+Successfully changed project path to: C:/Users/trine/OneDrive/Dokumenter/GitHub/SPRO3_minigames/memory test 2
+C:/Users/trine/OneDrive/Dokumenter/GitHub/SPRO3_minigames/memory test 2
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 341.91 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 10.37 ms.
+Initialize engine version: 2020.3.20f1 (41c4e627c95f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/trine/OneDrive/Dokumenter/GitHub/SPRO3_minigames/memory test 2/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics (ID=0x8a56)
+    Vendor:   
+    VRAM:     3998 MB
+    Driver:   30.0.100.9805
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56044
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003949 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 103.47 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  7.141 seconds
+Domain Reload Profiling:
+	ReloadAssembly (7141ms)
+		BeginReloadAssembly (165ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (5ms)
+		EndReloadAssembly (625ms)
+			LoadAssemblies (154ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (212ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (271ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (104ms)
+				BeforeProcessingInitializeOnLoad (19ms)
+				ProcessInitializeOnLoadAttributes (116ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.014450 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 80.68 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\trine\OneDrive\Dokumenter\GitHub\SPRO3_minigames\memory test 2\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\trine\OneDrive\Dokumenter\GitHub\SPRO3_minigames\memory test 2\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <83a38f5397d94e36a22efa3369c82390>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.559 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1560ms)
+		BeginReloadAssembly (159ms)
+			ExecutionOrderSort (1ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (1340ms)
+			LoadAssemblies (171ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (346ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (597ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (81ms)
+				BeforeProcessingInitializeOnLoad (122ms)
+				ProcessInitializeOnLoadAttributes (366ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.65 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 2914 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.0 MB.
+System memory in use after: 129.1 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3356.
+Total: 10.836700 ms (FindLiveObjects: 0.311400 ms CreateObjectMapping: 0.189000 ms MarkObjects: 9.747600 ms  DeleteObjects: 0.586900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Prefabs/CloverObjects/Eevee Variant.prefab
+  artifactKey: Guid(5230a7fc7c5666144b84a387d38d3ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/CloverObjects/Eevee Variant.prefab using Guid(5230a7fc7c5666144b84a387d38d3ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+ -> (artifact id: '049f97c64d21661f12316b219ec3cbeb') in 6.723158 seconds 
+  Import took 6.733110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000997 seconds.
+  path: Assets/Prefabs/CloverObjects/Charmander Variant.prefab
+  artifactKey: Guid(6bb6b21cfe725a2488ae94ceaafc481d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/CloverObjects/Charmander Variant.prefab using Guid(6bb6b21cfe725a2488ae94ceaafc481d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+ -> (artifact id: '1449ec8f0e11c22821b15ee56fe93d67') in 0.066798 seconds 
+  Import took 0.074595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000399 seconds.
+  path: Assets/Prefabs/CloverObjects/Meowth Variant.prefab
+  artifactKey: Guid(93a8edd58df559e49985eade8c4b512b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/CloverObjects/Meowth Variant.prefab using Guid(93a8edd58df559e49985eade8c4b512b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+ -> (artifact id: 'bb1160f3fc4588dec53f17a2cc5ca241') in 1.065676 seconds 
+  Import took 1.075111 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000412 seconds.
+  path: Assets/Prefabs/CloverObjects/Bulbasaur Variant.prefab
+  artifactKey: Guid(49770c67c8551704f93e12b1c771afa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/CloverObjects/Bulbasaur Variant.prefab using Guid(49770c67c8551704f93e12b1c771afa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+ -> (artifact id: 'e78cdc8ea5c20747fce16dc56a05adfe') in 1.083829 seconds 
+  Import took 1.091001 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016189 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.29 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.27 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\trine\OneDrive\Dokumenter\GitHub\SPRO3_minigames\memory test 2\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\trine\OneDrive\Dokumenter\GitHub\SPRO3_minigames\memory test 2\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <83a38f5397d94e36a22efa3369c82390>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  7.821 seconds
+Domain Reload Profiling:
+	ReloadAssembly (7822ms)
+		BeginReloadAssembly (736ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (47ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (220ms)
+		EndReloadAssembly (6686ms)
+			LoadAssemblies (733ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1879ms)
+			ReleaseScriptCaches (8ms)
+			RebuildScriptCaches (426ms)
+			SetupLoadedEditorAssemblies (2945ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (35ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (752ms)
+				ProcessInitializeOnLoadAttributes (2023ms)
+				ProcessInitializeOnLoadMethodAttributes (86ms)
+				AfterProcessingInitializeOnLoad (42ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (51ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 7.14 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.50 ms.
+Unloading 2830 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.3 MB.
+System memory in use after: 137.5 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 3367.
+Total: 26.501800 ms (FindLiveObjects: 1.859100 ms CreateObjectMapping: 1.099400 ms MarkObjects: 23.148500 ms  DeleteObjects: 0.388700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 61.982806 seconds.
+  path: Assets/Objects/Pokemon
+  artifactKey: Guid(2811e43fd006d63448570363ba373653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Pokemon using Guid(2811e43fd006d63448570363ba373653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53da04296ba38df94f47dedc8c3af536') in 0.055951 seconds 
+  Import took 0.079519 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.048063 seconds.
+  path: Assets/Objects/Pokemon/Bulbasaur
+  artifactKey: Guid(58296748726264049ba0bf25be05d11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Pokemon/Bulbasaur using Guid(58296748726264049ba0bf25be05d11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '560356b20ec8c8bacaf4da477993e96e') in 0.032871 seconds 
+  Import took 0.041621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.229201 seconds.
+  path: Assets/Objects/Pokemon/Bulbasaur/Bulbasaur.FBX
+  artifactKey: Guid(04e035335f0a55b4c818cd7474f4e48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Pokemon/Bulbasaur/Bulbasaur.FBX using Guid(04e035335f0a55b4c818cd7474f4e48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+ -> (artifact id: 'c57b6fb2c4ed23c7ec9288198ee33ef5') in 5.793387 seconds 
+  Import took 5.858811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000577 seconds.
+  path: Assets/Objects/Pokemon/Bulbasaur/Bulbasaur_ColladaMax.DAE
+  artifactKey: Guid(53f4c10ba2df0284eaf350ba33eebf81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Pokemon/Bulbasaur/Bulbasaur_ColladaMax.DAE using Guid(53f4c10ba2df0284eaf350ba33eebf81) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+ -> (artifact id: 'a3b771e2e5493686f1d86e76e3066bf8') in 0.418928 seconds 
+  Import took 0.430654 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/Objects/Pokemon/Bulbasaur/Bulbasaur_OpenCollada.DAE
+  artifactKey: Guid(1cf03050c68f905418faebc7a186e8db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Pokemon/Bulbasaur/Bulbasaur_OpenCollada.DAE using Guid(1cf03050c68f905418faebc7a186e8db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+ -> (artifact id: 'a11037c952d58ae8cee460d9c7fb1221') in 1.142983 seconds 
+  Import took 1.213192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 189.599108 seconds.
+  path: Assets/Objects/Pokemon/Eevee/Eevee.FBX
+  artifactKey: Guid(7ac2a090272a1584d93f600a1314bb31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Pokemon/Eevee/Eevee.FBX using Guid(7ac2a090272a1584d93f600a1314bb31) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+ -> (artifact id: 'ee39c795cceab54472234d082d36c3ff') in 0.066393 seconds 
+  Import took 0.076392 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000627 seconds.
+  path: Assets/Objects/Pokemon/Eevee/Eevee_ColladaMax.DAE
+  artifactKey: Guid(d4866efd22c522945b19d409662a8a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Pokemon/Eevee/Eevee_ColladaMax.DAE using Guid(d4866efd22c522945b19d409662a8a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+ -> (artifact id: '5cb817fb0c9672264a91a66bdfc4490e') in 0.082411 seconds 
+  Import took 0.090028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.848235 seconds.
+  path: Assets/Objects/Pokemon/Charmander/Charmander.FBX
+  artifactKey: Guid(53da036edd7a9434080e028492210bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Pokemon/Charmander/Charmander.FBX using Guid(53da036edd7a9434080e028492210bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+ -> (artifact id: '7f679765042e2f9af34eae09f4971ee2') in 0.066341 seconds 
+  Import took 0.074876 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Objects/Pokemon/Charmander/Charmander_ColladaMax.DAE
+  artifactKey: Guid(62059f791bc2b064d9c130d465bdfcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Pokemon/Charmander/Charmander_ColladaMax.DAE using Guid(62059f791bc2b064d9c130d465bdfcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+ -> (artifact id: '3f4e96287dc2930d12a7ab488ce33858') in 0.091009 seconds 
+  Import took 0.097595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.965974 seconds.
+  path: Assets/Objects/Pokemon/Mewtwo/pmxxx1_00_fi.dae
+  artifactKey: Guid(324ecf2a232001440baaa284483e7002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Pokemon/Mewtwo/pmxxx1_00_fi.dae using Guid(324ecf2a232001440baaa284483e7002) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+ -> (artifact id: 'a72627cdaa5dfd0a0ed905749ec12626') in 0.092619 seconds 
+  Import took 0.098137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Objects/Pokemon/Mewtwo/pmxxx1_00_fi_head.png
+  artifactKey: Guid(096db6dfcfe279d46856eb0d972f1dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Pokemon/Mewtwo/pmxxx1_00_fi_head.png using Guid(096db6dfcfe279d46856eb0d972f1dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32d766000e609b2e957281a6d9917004') in 1.098946 seconds 
+  Import took 1.110077 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000577 seconds.
+  path: Assets/Objects/Pokemon/Mewtwo/PMxxx1_00_fi_body.png
+  artifactKey: Guid(bfc92d60d2374344b992ac36a92e8605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Pokemon/Mewtwo/PMxxx1_00_fi_body.png using Guid(bfc92d60d2374344b992ac36a92e8605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e420276f69bf0dbaa7e1ac7201f65fb2') in 0.046067 seconds 
+  Import took 0.057003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/Objects/Pokemon/Mewtwo/PMxxx1_00_fi_face.png
+  artifactKey: Guid(7deb06507d8874f4fbb4e8f43e0832b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Pokemon/Mewtwo/PMxxx1_00_fi_face.png using Guid(7deb06507d8874f4fbb4e8f43e0832b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c55c692588055b9d0b9705e4b0ebbbc4') in 0.048473 seconds 
+  Import took 0.060518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.644913 seconds.
+  path: Assets/Objects/Pokemon/Meowth/Meowth.DAE
+  artifactKey: Guid(8db1be629dcd24b4d81badefd8a568b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Pokemon/Meowth/Meowth.DAE using Guid(8db1be629dcd24b4d81badefd8a568b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+ -> (artifact id: '200c5acb90617284ead113e6e1d835e6') in 0.075890 seconds 
+  Import took 0.086445 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/Objects/Pokemon/Meowth/Meowth.FBX
+  artifactKey: Guid(40669c97b888d2b42b734d5a9eae6742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Pokemon/Meowth/Meowth.FBX using Guid(40669c97b888d2b42b734d5a9eae6742) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+Error assigning CUBE texture to 2D texture property '_MainTex': Dimensions must match
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Shaders/ShaderImpl/ShaderTextureProperty.h line 41]
+
+ -> (artifact id: '3eb9a3598f28ab94ab35e7089ba095a8') in 0.087194 seconds 
+  Import took 0.093186 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 218.208766 seconds.
+  path: Assets/Prefabs/Puzzle Button/Puzzle Button.prefab
+  artifactKey: Guid(fe1ecae1ee0539649974e5c87c8e9e3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Puzzle Button/Puzzle Button.prefab using Guid(fe1ecae1ee0539649974e5c87c8e9e3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2221d3bc42d3836aa587a00a78b98736') in 0.059180 seconds 
+  Import took 0.066888 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

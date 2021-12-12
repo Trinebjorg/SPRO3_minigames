@@ -16,9 +16,16 @@ public class PuzzleGameManager : MonoBehaviour
     private int level;
     private string selectedPuzzle;
 
+    private Sprite puzzleBackgroundImage; 
+
     private bool firstGuess, secondGuess;
     private int firstGuessIndex, secondGuessIndex;
-    private string firstGuessPuzzle, secondGuessPuzzle; 
+    private string firstGuessPuzzle, secondGuessPuzzle;
+
+    private int countTryGuesses;
+
+    private int countCorrectGuesses;
+    private int gameGuess; 
 
     public void PickAPuzzle()
     {
@@ -26,7 +33,7 @@ public class PuzzleGameManager : MonoBehaviour
         {
             firstGuess = true;
 
-            firstGuessIndex = int.Parse(UnityEngine.Eventsystems.EventSystem.current.currentSelectedGameObject.name);
+            firstGuessIndex = int.Parse(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name);
 
             firstGuessPuzzle = gamePuzzleSprites[firstGuessIndex].name; 
 
@@ -39,12 +46,52 @@ public class PuzzleGameManager : MonoBehaviour
         {
             secondGuess = true;
 
-            secondGuessIndex = int.Parse(UnityEngine.Eventsystems.EventSystem.current.currentSelectedGameObject.name);
+            secondGuessIndex = int.Parse(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name);
 
             secondGuessPuzzle = gamePuzzleSprites[secondGuessIndex].name;
 
-            StartCoroutine(TurnPuzzleButtonIn(puzzleButtonsAnimators[secondGuessiÍndex], puzzleButtons[secondGuessIndex], gamePuzzleSprites[SecondGuessIndex]));
+            StartCoroutine(TurnPuzzleButtonIn(puzzleButtonsAnimators[secondGuessIndex], puzzleButtons[secondGuessIndex], gamePuzzleSprites[secondGuessIndex]));
 
+            StartCoroutine(CheckIfThePuzzlesMatch(puzzleBackgroundImage));
+
+            countTryGuesses++;
+        }
+
+
+
+
+    }
+
+    IEnumerator CheckIfThePuzzlesMatch(Sprite puzzleBackgroundImage)
+    {
+        yield return new WaitForSeconds(1.7f);
+
+        if(firstGuessPuzzle == secondGuessPuzzle)
+        {
+            puzzleButtonsAnimators[firstGuessIndex].Play("FadeOut");
+            puzzleButtonsAnimators[secondGuessIndex].Play("FadeOut");
+
+            CheckIfTheGameIsFinished();
+        } else
+        {
+            StartCoroutine(TurnPuzzleButtonOut(puzzleButtonsAnimators[firstGuessIndex], puzzleButtons[firstGuessIndex], puzzleBackgroundImage));
+
+            StartCoroutine(TurnPuzzleButtonOut(puzzleButtonsAnimators[secondGuessIndex], puzzleButtons[secondGuessIndex], puzzleBackgroundImage));
+
+        }
+
+        yield return new WaitForSeconds(.7f);
+
+        firstGuess = secondGuess = false; 
+    } 
+
+    void CheckIfTheGameIsFinished()
+    {
+        countCorrectGuesses++;
+
+        if(countCorrectGuesses == gameGuess)
+        {
+            Debug.Log("Game End");
         }
 
     }
@@ -77,6 +124,11 @@ public class PuzzleGameManager : MonoBehaviour
     {
         this.puzzleButtons = buttons;
         this.puzzleButtonsAnimators = animators;
+
+        gameGuess = puzzleButtons.Count / 2; 
+
+        puzzleBackgroundImage = puzzleButtons[0].image.sprite; 
+
 
         AddListeners();
 

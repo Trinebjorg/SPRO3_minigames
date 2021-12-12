@@ -7,6 +7,8 @@ public class SetupPuzzleGame : MonoBehaviour
 {
 
     [SerializeField]
+    private PuzzleGameManager puzzleGameManager;
+
     private Sprite[] cloverPuzzleSprites, marvelPuzzleSprites, transportPuzzleSprites;
 
     private List<Sprite> gamePuzzles = new List<Sprite>();
@@ -30,21 +32,107 @@ public class SetupPuzzleGame : MonoBehaviour
 
     void PrepareGameSprites()
     {
+        gamePuzzles.Clear ();
+        gamePuzzles = new List<Sprite>();
 
+        int index = 0; 
+
+        switch (level)
+        {
+            case 0:
+                looper = 4;
+                break;
+
+            case 1:
+                looper = 8;
+                break;
+            case 2:
+                looper = 12;
+                break;
+
+            case 3:
+                looper = 18;
+                break;
+
+            case 4:
+                looper = 24;
+                break;
+        }
+
+        switch(selectedPuzzle)
+        {
+            case "Clover Puzzle":
+                for(int i = 0; i< looper; i++)
+                {
+                    if(index == (looper/2))
+                    {
+                        index = 0; 
+                    }
+                    gamePuzzles.Add(cloverPuzzleSprites[index]);
+
+                    index++;
+                }
+
+                break;
+
+            case "Marvel Puzzle":
+                for (int i = 0; i < looper; i++)
+                {
+                    if (index == (looper / 2))
+                    {
+                        index = 0;
+                    }
+                    gamePuzzles.Add(marvelPuzzleSprites[index]);
+
+                    index++;
+                }
+
+                break;
+
+            case "Transport Puzzle":
+                for (int i = 0; i < looper; i++)
+                {
+                    if (index == (looper / 2))
+                    {
+                        index = 0;
+                    }
+                    gamePuzzles.Add(transportPuzzleSprites[index]);
+
+                    index++;
+                }
+
+                break;
+        }
+        Shuffle(gamePuzzles);
     }
 
     void Shuffle(List<Sprite> list)
     {
+        for(int i = 0; i < list.Count; i++)
+        {
+            Sprite temp = list[i];
+            int randomIndex = Random.Range(i, list.Count);
+            list[i] = list[randomIndex];
+            list[randomIndex] = temp; 
 
+        }
     }
 
     public void SetLevelAndPuzzle(int level, string selectedPuzzle)
     {
+        this.level = level;
+        this.selectedPuzzle = selectedPuzzle;
 
+        PrepareGameSprites();
+
+        puzzleGameManager.SetGamePuzzleSprites(this.gamePuzzles);
     }
 
-    public void SetPuzzleButtonsAndAnimators(List<Button> puzzleButtons, List<Animator> puzzleButtonAnimators)
+    public void SetPuzzleButtonsAndAnimators(List<Button> puzzleButtons, List<Animator> puzzleButtonsAnimators)
     {
+        this.puzzleButtons = puzzleButtons;
+        this.puzzleButtonsAnimators = puzzleButtonsAnimators;
 
+        puzzleGameManager.SetupButtonsAndAnimators(puzzleButtons, puzzleButtonsAnimators);
     }
 }

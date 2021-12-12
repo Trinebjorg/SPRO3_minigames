@@ -98,7 +98,7 @@ public class LoadPuzzleGame : MonoBehaviour
 
     IEnumerator LoadPuzzleGamePanel (GameObject puzzleGamePanel, Animator puzzleGamePanelAnim)
     {
-        puzzleGamePanelAnim.Play("FadeIn");
+        puzzleGamePanel.SetActive(true);
         puzzleGamePanelAnim.Play("FadeIn");
         puzzleLevelSelectAnim.Play("FadeOut");
         yield return new WaitForSeconds(1f);

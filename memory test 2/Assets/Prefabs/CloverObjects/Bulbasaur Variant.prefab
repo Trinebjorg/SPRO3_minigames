@@ -1,18 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &8736270529935694778
+--- !u!114 &8964112082752975435
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5536216173138914838}
+  m_GameObject: {fileID: 2997453758554787682}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6cde6777b81650e4fa0ac0715bb2ac84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &4617876917897040711
+--- !u!1001 &2691025700929696307
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -26,18 +26,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 04e035335f0a55b4c818cd7474f4e48f,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.63243
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04e035335f0a55b4c818cd7474f4e48f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.63243
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04e035335f0a55b4c818cd7474f4e48f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.63243
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04e035335f0a55b4c818cd7474f4e48f,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 04e035335f0a55b4c818cd7474f4e48f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.0002245
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 04e035335f0a55b4c818cd7474f4e48f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1.0549471
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 04e035335f0a55b4c818cd7474f4e48f,
         type: 3}
@@ -77,13 +92,13 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 04e035335f0a55b4c818cd7474f4e48f,
         type: 3}
       propertyPath: m_Name
-      value: Bulbasaur
+      value: Bulbasaur Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04e035335f0a55b4c818cd7474f4e48f, type: 3}
---- !u!1 &5536216173138914838 stripped
+--- !u!1 &2997453758554787682 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 04e035335f0a55b4c818cd7474f4e48f,
     type: 3}
-  m_PrefabInstance: {fileID: 4617876917897040711}
+  m_PrefabInstance: {fileID: 2691025700929696307}
   m_PrefabAsset: {fileID: 0}

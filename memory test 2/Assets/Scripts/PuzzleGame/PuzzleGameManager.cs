@@ -13,6 +13,9 @@ public class PuzzleGameManager : MonoBehaviour
     [SerializeField]
     private List<Sprite> gamePuzzleSprites = new List<Sprite>();
 
+    [SerializeField]
+    private GameFinished gameFinished;
+
     private int level;
     private string selectedPuzzle;
 
@@ -91,10 +94,63 @@ public class PuzzleGameManager : MonoBehaviour
 
         if(countCorrectGuesses == gameGuess)
         {
-            Debug.Log("Game End");
+ //           Debug.Log("Game End");
+            CheckHowManyGuesses();
         }
 
     }
+
+    void CheckHowManyGuesses()
+    {
+        int amountGuesses = 0;  
+
+        switch (level) {
+            case 0:
+                amountGuesses = 5;
+                break;
+
+            case 1:
+                amountGuesses = 10;
+                break;
+
+            case 2:
+                amountGuesses = 15;
+                break;
+
+            case 3:
+                amountGuesses = 20;
+                break;
+
+            case 4:
+                amountGuesses = 25;
+                break; 
+        }
+
+        if(countTryGuesses < amountGuesses)
+        {
+            gameFinished.ShowGameFinishedPanel(3); 
+        } else if (countTryGuesses < (amountGuesses + 5))
+        {
+            gameFinished.ShowGameFinishedPanel(2);
+        } else
+        {
+            gameFinished.ShowGameFinishedPanel(1);
+        }
+    }
+
+    public List<Animator> ResetGameplay()
+    {
+        firstGuess = secondGuess = false;
+
+        countTryGuesses = 0;
+        countCorrectGuesses = 0; 
+
+        gameFinished.HideGameFinishedPanel();
+
+
+        return puzzleButtonsAnimators; 
+    }
+
 
     IEnumerator TurnPuzzleButtonIn(Animator anim, Button btn, Sprite puzzleImage)
     {

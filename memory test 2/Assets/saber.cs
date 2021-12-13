@@ -19,7 +19,7 @@ public class saber : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, 1, Layer))
         {
-            if (Vector3.Angle(transform.position-previousPos, hit.transform.up)>130) //Hit the objects over 130 degrees
+            if (Vector3.Angle(transform.position-previousPos, hit.transform.up)>=0) //Hit the objects over 130 degrees
             {
                 Destroy(hit.transform.gameObject);
             }

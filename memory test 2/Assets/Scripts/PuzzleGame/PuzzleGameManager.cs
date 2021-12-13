@@ -140,10 +140,15 @@ public class PuzzleGameManager : MonoBehaviour
 
     public List<Animator> ResetGameplay()
     {
+        firstGuess = secondGuess = false;
+
+        countTryGuesses = 0;
+        countCorrectGuesses = 0; 
+
         gameFinished.HideGameFinishedPanel();
 
 
-        return null; 
+        return puzzleButtonsAnimators; 
     }
 
 

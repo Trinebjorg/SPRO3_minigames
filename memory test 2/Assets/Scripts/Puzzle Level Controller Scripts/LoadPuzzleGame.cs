@@ -25,7 +25,9 @@ public class LoadPuzzleGame : MonoBehaviour
 
     private int puzzlelevel;
 
-    private string selectedPuzzle; 
+    private string selectedPuzzle;
+
+    private List<Animator> anims;
 
 
     public void LoadPuzzle(int level, string puzzle)
@@ -64,7 +66,7 @@ public class LoadPuzzleGame : MonoBehaviour
 
     public void BackToPuzzleLevelSelectMenu()
     {
-        puzzleGameManager.ResetGameplay();
+        anims = puzzleGameManager.ResetGameplay();
 
         switch (puzzlelevel)
         {
@@ -97,8 +99,19 @@ public class LoadPuzzleGame : MonoBehaviour
         puzzleLevelSelectAnim.Play("FadeIn");
         puzzleGamePanelAnim.Play("FadeOut");
         yield return new WaitForSeconds(1f);
+
+        foreach (Animator anim in anims)
+        {
+            anim.Play("Idle");
+        }
+
+        yield return new WaitForSeconds(.5f); 
+
+
         puzzleGamePanel.SetActive(false);
     }
+
+
 
 
     IEnumerator LoadPuzzleGamePanel (GameObject puzzleGamePanel, Animator puzzleGamePanelAnim)

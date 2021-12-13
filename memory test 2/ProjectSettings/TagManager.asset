@@ -6,6 +6,10 @@ TagManager:
   tags:
   - PuzzleButton
   - BackToMenu_Button
+  - CloverTag
+  - d
+  - DictroyCol
+  - DistroyTrig
   layers:
   - Default
   - TransparentFX
@@ -13,7 +17,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - CloverLayer
   - 
   - 
   - 

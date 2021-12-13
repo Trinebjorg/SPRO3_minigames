@@ -5,6 +5,9 @@ using UnityEngine;
 public class LoadPuzzleGame : MonoBehaviour
 {
     [SerializeField]
+    private PuzzleGameManager puzzleGameManager;
+
+    [SerializeField]
     private LayoutPuzzleButtons layoutPuzzleButtons;
 
     [SerializeField]
@@ -61,6 +64,8 @@ public class LoadPuzzleGame : MonoBehaviour
 
     public void BackToPuzzleLevelSelectMenu()
     {
+        puzzleGameManager.ResetGameplay();
+
         switch (puzzlelevel)
         {
             case 0:

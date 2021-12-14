@@ -9,8 +9,10 @@ public class SetupPuzzleGame : MonoBehaviour
     [SerializeField]
     private PuzzleGameManager puzzleGameManager;
 
+    [SerializeField]
     private Sprite[] cloverPuzzleSprites, marvelPuzzleSprites, transportPuzzleSprites;
 
+    [SerializeField]
     private List<Sprite> gamePuzzles = new List<Sprite>();
 
     private List<Button> puzzleButtons = new List<Button>();
@@ -22,7 +24,7 @@ public class SetupPuzzleGame : MonoBehaviour
 
     private int looper;
 
-    private void Awake()
+     void Awake()
     {
         cloverPuzzleSprites = Resources.LoadAll<Sprite>("Sprites/Clover");
         marvelPuzzleSprites = Resources.LoadAll<Sprite>("Sprites/Pokemon");
@@ -62,7 +64,7 @@ public class SetupPuzzleGame : MonoBehaviour
         switch(selectedPuzzle)
         {
             case "Clover Puzzle":
-                for(int i = 0; i< looper; i++)
+                for(int i = 0; i < looper; i++)
                 {
                     if(index == (looper/2))
                     {

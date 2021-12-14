@@ -314,12 +314,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hand: {fileID: 0}
-  ignoreMask:
-    serializedVersion: 2
-    m_Bits: 0
   buffer: 0.1
   alwaysRun: 0
-  ignoreMaxHandDistance: 0
+  strict: 0
 --- !u!1 &1725775218842682535
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,33 +411,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9413d460e98076241a1f46c91201217d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ignoreMe: 0
   fingers:
   - {fileID: 971444706731232959}
   - {fileID: 6185395775999058418}
   - {fileID: 3104218448770134146}
   - {fileID: 814065189471789213}
-  palmTransform: {fileID: 1815447913620583107}
-  left: 0
-  reachDistance: 0.3
-  grabTime: 0.15
-  enableMovement: 1
   follow: {fileID: 0}
+  followPosition: {fileID: 0}
+  followRotation: {fileID: 0}
+  followPositionStrength: 50
+  followRotationStrength: 200
+  maxVelocity: 4
   maxFollowDistance: 1
+  left: 0
+  palmTransform: {fileID: 1815447913620583107}
+  reachDistance: 0.3
   throwPower: 1
-  advancedFollowSettings: 1
-  enableIK: 1
+  throwVelocityExpireTime: 0.2
+  disableIK: 0
   swayStrength: 1.5
   gripOffset: 0.15
-  usingPoseAreas: 1
-  queryTriggerInteraction: 1
-  usingHighlight: 1
-  highlightLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  defaultHighlight: {fileID: 0}
-  showAdvanced: 0
-  grabType: 0
+  fingerBendSteps: 50
+  grabTime: 0.15
   grabCurve:
     serializedVersion: 2
     m_Curve:
@@ -465,10 +457,20 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  useSmoothReturn: 0
-  smoothReturnSpeed: 1
+  grabReturnTime: 0.15
   poseIndex: 0
-  ignoreMe1: 0
+  grabLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  highlightLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  lookAssistSpeed: 2
+  grabSpreadOffset: 0
+  showGizmos: 0
+  editorAutoGrab: 0
+  useLayerBasedAutoGrab: 0
+  editorSelected: 0
 --- !u!135 &4314603099671321086
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -669,7 +671,6 @@ MonoBehaviour:
   tipRadius: 0.014
   bendOffset: 0
   fingerSmoothSpeed: 1
-  secondaryOffset: 0
   minGripRotPose:
   - {x: -0.060781654, y: 0.005719542, z: 0.08698199, w: 0.99433744}
   - {x: -0.041804746, y: 0.00095205463, z: -0.002616497, w: 0.99912196}
@@ -885,7 +886,7 @@ Transform:
   m_GameObject: {fileID: 5653733938984602163}
   m_LocalRotation: {x: 0.0304441, y: 0.70645106, z: -0.030444097, w: 0.7064512}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2382328775094402964}
   m_RootOrder: 1
@@ -1032,7 +1033,6 @@ MonoBehaviour:
   tipRadius: 0.0155
   bendOffset: 0
   fingerSmoothSpeed: 1
-  secondaryOffset: 0
   minGripRotPose:
   - {x: -0.05327492, y: 0.00021716952, z: -0.0026638594, w: 0.9985764}
   - {x: -0.0012530269, y: 0.000065412285, z: 0.0059282403, w: 0.99998164}
@@ -1403,7 +1403,6 @@ MonoBehaviour:
   tipRadius: 0.015
   bendOffset: 0
   fingerSmoothSpeed: 1
-  secondaryOffset: 0
   minGripRotPose:
   - {x: -0.04526456, y: 0.0126804095, z: -0.09006642, w: 0.99482584}
   - {x: -0.05150927, y: 0.0038754577, z: -0.0013195053, w: 0.99866414}
@@ -1492,7 +1491,6 @@ MonoBehaviour:
   tipRadius: 0.02
   bendOffset: 0
   fingerSmoothSpeed: 1
-  secondaryOffset: 0
   minGripRotPose:
   - {x: 0.32950324, y: 0.86402637, z: 0.28300145, w: 0.25455105}
   - {x: 0.14124097, y: 0.024763143, z: -0.10908762, w: 0.98363495}

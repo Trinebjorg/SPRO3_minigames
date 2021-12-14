@@ -12,7 +12,7 @@ public class BackToMain : MonoBehaviour
 
     public void JumpToMemory() {
 
-        SceneManager.LoadScene(sceneName: "MemoryGame");
+        SceneManager.LoadScene(sceneName: "Memory_Game2");
 
     }
     public void JumpToMain()
@@ -30,4 +30,9 @@ public class BackToMain : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName: "CloverCatch");
     }
+    public void JumpToPickTheme()
+    {
+        SceneManager.LoadScene(sceneName: "ThemeCatch");
+    }
+
 }

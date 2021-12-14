@@ -32,6 +32,8 @@ public class PuzzleGameManager : MonoBehaviour
 
     public void PickAPuzzle()
     {
+        Debug.Log("The selected Button is " + UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name);
+
         if(!firstGuess)
         {
             firstGuess = true;
@@ -94,7 +96,7 @@ public class PuzzleGameManager : MonoBehaviour
 
         if(countCorrectGuesses == gameGuess)
         {
- //           Debug.Log("Game End");
+            Debug.Log("Game End");
             CheckHowManyGuesses();
         }
 
@@ -154,7 +156,7 @@ public class PuzzleGameManager : MonoBehaviour
 
     IEnumerator TurnPuzzleButtonIn(Animator anim, Button btn, Sprite puzzleImage)
     {
-        anim.Play("FadeIn");
+        anim.Play("TurnUp");
         yield return new WaitForSeconds(.4f);
         btn.image.sprite = puzzleImage;
 
@@ -162,7 +164,7 @@ public class PuzzleGameManager : MonoBehaviour
 
     IEnumerator TurnPuzzleButtonOut(Animator anim, Button btn, Sprite puzzleImage)
     {
-        anim.Play("FadeOut");
+        anim.Play("TurnBack");
         yield return new WaitForSeconds(.4f);
         btn.image.sprite = puzzleImage;
 

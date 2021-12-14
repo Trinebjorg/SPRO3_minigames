@@ -48,7 +48,7 @@ public class SelectLevel : MonoBehaviour
     public void SetSelectedPuzzle(string selectedPuzzle)
     {
         this.selectedPuzzle = selectedPuzzle;
-        Debug.Log("The selected puzzle is" + selectedPuzzle);
+        Debug.Log("The selected puzzle is " + selectedPuzzle);
     }
 
 }

@@ -6932,6 +6932,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleGameManager: {fileID: 1861746482}
+  cloverPuzzleSprites: []
+  marvelPuzzleSprites: []
+  transportPuzzleSprites: []
+  gamePuzzles: []
 --- !u!114 &1861746482
 MonoBehaviour:
   m_ObjectHideFlags: 0

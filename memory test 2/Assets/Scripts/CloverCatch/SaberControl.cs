@@ -18,7 +18,18 @@ public class SaberControl : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        Destroy(collision.collider.gameObject);
-        Destroy(gameObject);
+        if(collision.gameObject.name == "Bulbasaur_collison")
+        {
+            Destroy(gameObject);
+            Debug.Log("Saur is here");
+        }
+        //Destroy(collision.collider.gameObject);
+        //Destroy(gameObject);
+    }
+
+    public void OnTriggerEnter(Collider col)
+    {
+        Destroy(col.gameObject);
+        Debug.Log("No here");
     }
 }

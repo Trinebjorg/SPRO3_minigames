@@ -69,7 +69,7 @@ public class PuzzleGameManager : MonoBehaviour
 
     IEnumerator CheckIfThePuzzlesMatch(Sprite puzzleBackgroundImage)
     {
-        yield return new WaitForSeconds(1.7f);
+        yield return new WaitForSeconds(1.3f);
 
         if(firstGuessPuzzle == secondGuessPuzzle)
         {

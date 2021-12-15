@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 
 
-public class BackToMain : MonoBehaviour
+public class SwitchScene : MonoBehaviour
 {
     
 

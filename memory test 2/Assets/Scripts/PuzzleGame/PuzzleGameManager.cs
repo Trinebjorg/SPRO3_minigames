@@ -107,39 +107,46 @@ public class PuzzleGameManager : MonoBehaviour
 
     void CheckHowManyGuesses()
     {
-        int amountGuesses = 0;  
+        int amountGuesses1 = 0;
+        int amountGuesses2 = 0; 
 
         switch (level) {
             case 0:
-                amountGuesses = 3;
+                amountGuesses1 = 3;
+                amountGuesses2 = 2;
                 break;
 
             case 1:
-                amountGuesses = 5;
+                amountGuesses1 = 5;
+                amountGuesses2 = 3;
                 break;
 
             case 2:
-                amountGuesses = 10;
+                amountGuesses1 = 8;
+                amountGuesses2 = 4;
                 break;
 
             case 3:
-                amountGuesses = 15;
+                amountGuesses1 = 13;
+                amountGuesses2 = 4; 
                 break;
 
             case 4:
-                amountGuesses = 20;
+                amountGuesses1 = 16;
+                amountGuesses2 = 4; 
                 break;
 
 
             case 5:
-                amountGuesses = 25;
+                amountGuesses1 = 50;
+                amountGuesses2 = 15;
                 break;
         }
 
-        if(countTryGuesses < amountGuesses)
+        if(countTryGuesses < amountGuesses1)
         {
             gameFinished.ShowGameFinishedPanel(3); 
-        } else if (countTryGuesses < (amountGuesses + 5))
+        } else if (countTryGuesses < (amountGuesses1 + amountGuesses2))
         {
             gameFinished.ShowGameFinishedPanel(2);
         } else

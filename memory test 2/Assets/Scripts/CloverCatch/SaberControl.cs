@@ -4,26 +4,15 @@ using UnityEngine;
 
 public class SaberControl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    int count = 0;
     public void OnTriggerEnter(Collider col)
     {
+        Debug.Log("Leets go");
         Destroy(col.gameObject);
-        Debug.Log("Second");
+        Debug.Log("First");
+        count++;
+        Debug.Log("Count" + count);
 
-        if (col.CompareTag("GameObject1"))
-        {
-            Destroy(col.gameObject);
-        }
     }
 
     /*

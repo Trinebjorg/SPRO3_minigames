@@ -15,7 +15,18 @@ public class SaberControl : MonoBehaviour
     {
         
     }
+    public void OnTriggerEnter(Collider col)
+    {
+        Destroy(col.gameObject);
+        Debug.Log("Second");
 
+        if (col.CompareTag("GameObject1"))
+        {
+            Destroy(col.gameObject);
+        }
+    }
+
+    /*
     public void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.name == "Charmander_trigger")
@@ -25,11 +36,26 @@ public class SaberControl : MonoBehaviour
         }
         //Destroy(collision.collider.gameObject);
         //Destroy(gameObject);
+        if (collision.gameObject.name == "GameObject1")
+        {
+            Destroy(gameObject);
+            Debug.Log("1");
+        }
+        if (collision.gameObject.name == "GameObject2")
+        {
+            Destroy(gameObject);
+            Debug.Log("2");
+        }
+        if (collision.gameObject.name == "GameObject3")
+        {
+            Destroy(gameObject);
+            Debug.Log("3");
+        }
+        if (collision.gameObject.name == "GameObject4")
+        {
+            Destroy(gameObject);
+            Debug.Log("4");
+        }
     }
-
-    public void OnTriggerEnter(Collider col)
-    {
-        Destroy(col.gameObject);
-        Debug.Log("Second");
-    }
+    */
 }

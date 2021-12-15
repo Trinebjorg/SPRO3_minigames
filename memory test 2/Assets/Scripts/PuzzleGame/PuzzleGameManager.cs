@@ -14,6 +14,9 @@ public class PuzzleGameManager : MonoBehaviour
     private List<Sprite> gamePuzzleSprites = new List<Sprite>();
 
     [SerializeField]
+    private PuzzleGameSaver puzzleGameSaver; 
+
+    [SerializeField]
     private GameFinished gameFinished;
 
     private int level;

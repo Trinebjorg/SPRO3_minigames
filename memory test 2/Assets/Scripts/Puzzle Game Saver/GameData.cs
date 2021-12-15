@@ -30,6 +30,15 @@ public class GameData
         return this.musicVolume;
     }
 
+    public void SetisTheGameStartedForTheFirstTime( bool isTheGameStartedForTheFirstTime)
+    {
+        this.isTheGameStartedForTheFirstTime = isTheGameStartedForTheFirstTime;
+    }
+    public bool GetisTheGameStartedForTheFirstTime()
+    {
+        return this.isTheGameStartedForTheFirstTime;
+    }
+
 
 
 }

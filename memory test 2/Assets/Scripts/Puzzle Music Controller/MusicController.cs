@@ -6,7 +6,7 @@ public class MusicController : MonoBehaviour
 {
 
     [SerializeField]
-    private PuzzleGameManager puzzleGameSaver;
+    private PuzzleGameSaver puzzleGameSaver;
 
     private AudioSource bgMusicClip;
 
@@ -16,13 +16,14 @@ public class MusicController : MonoBehaviour
 
     void Awake()
     {
-
+        GetAudioSource();
     }
 
     // Start is called before the first frame update
     void Start()
     {
-
+        musicVolume = puzzleGameSaver.musicVolume;
+        PlayOrTurnOffMusic(musicVolume);
     }
 
     void GetAudioSource()
@@ -49,12 +50,25 @@ public class MusicController : MonoBehaviour
             }
 
             puzzleGameSaver.musicVolume = musicVolume;
-
+            puzzleGameSaver.SaveGameData();
+        } else if (bgMusicClip.volume == 0)
+        {
+            if(bgMusicClip.isPlaying)
+            {
+                bgMusicClip.Stop();
+            }
+            puzzleGameSaver.musicVolume = musicVolume;
+            puzzleGameSaver.SaveGameData();
         }
     
     
     }
 
+
+    public float GetMusicVolume()
+    {
+        return this.musicVolume;
+    }
 
 
 }

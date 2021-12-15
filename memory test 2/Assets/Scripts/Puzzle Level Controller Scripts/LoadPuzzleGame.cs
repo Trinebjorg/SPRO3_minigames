@@ -35,7 +35,7 @@ public class LoadPuzzleGame : MonoBehaviour
         this.puzzlelevel = level;
         this.selectedPuzzle = puzzle;
 
-        layoutPuzzleButtons.LayoutButtons (level, puzzle);
+        layoutPuzzleButtons.LayoutButtons ( level, puzzle);
 
         switch (puzzlelevel)
         {

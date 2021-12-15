@@ -111,24 +111,29 @@ public class PuzzleGameManager : MonoBehaviour
 
         switch (level) {
             case 0:
-                amountGuesses = 5;
+                amountGuesses = 3;
                 break;
 
             case 1:
-                amountGuesses = 10;
+                amountGuesses = 5;
                 break;
 
             case 2:
-                amountGuesses = 15;
+                amountGuesses = 10;
                 break;
 
             case 3:
-                amountGuesses = 20;
+                amountGuesses = 15;
                 break;
 
             case 4:
+                amountGuesses = 20;
+                break;
+
+
+            case 5:
                 amountGuesses = 25;
-                break; 
+                break;
         }
 
         if(countTryGuesses < amountGuesses)

@@ -17,18 +17,22 @@ public class CreatePuzzleButtonsAndAnimators : MonoBehaviour
     private int puzzleGame3 = 12;
     private int puzzleGame4 = 18;
     private int puzzleGame5 = 24;
+    private int puzzleGame6 = 80; 
 
     private List<Button> level1Buttons = new List<Button>();
     private List<Button> level2Buttons = new List<Button>();
     private List<Button> level3Buttons = new List<Button>();
     private List<Button> level4Buttons = new List<Button>();
     private List<Button> level5Buttons = new List<Button>();
+    private List<Button> level6Buttons = new List<Button>();
+
 
     private List<Animator> level1Anims = new List<Animator>();
     private List<Animator> level2Anims = new List<Animator>();
     private List<Animator> level3Anims = new List<Animator>();
     private List<Animator> level4Anims = new List<Animator>();
     private List<Animator> level5Anims = new List<Animator>();
+    private List<Animator> level6Anims = new List<Animator>();
 
 
     void Awake()
@@ -50,12 +54,16 @@ public class CreatePuzzleButtonsAndAnimators : MonoBehaviour
         layoutPuzzleButtons.level3Buttons = level3Buttons;
         layoutPuzzleButtons.level4Buttons = level4Buttons;
         layoutPuzzleButtons.level5Buttons = level5Buttons;
+        layoutPuzzleButtons.level6Buttons = level6Buttons;
+
 
         layoutPuzzleButtons.level1Anims = level1Anims;
         layoutPuzzleButtons.level2Anims = level2Anims;
         layoutPuzzleButtons.level3Anims = level3Anims;
         layoutPuzzleButtons.level4Anims = level4Anims;
         layoutPuzzleButtons.level5Anims = level5Anims;
+        layoutPuzzleButtons.level6Anims = level6Anims;
+
 
 
     }
@@ -92,6 +100,12 @@ public class CreatePuzzleButtonsAndAnimators : MonoBehaviour
             btn.gameObject.name = "" + i;
             level5Buttons.Add(btn);
         }
+        for (int i = 0; i < puzzleGame6; i++)
+        {
+            Button btn = Instantiate(puzzleButton);
+            btn.gameObject.name = "" + i;
+            level6Buttons.Add(btn);
+        }
     }
 
     void GetAnimators()
@@ -121,6 +135,10 @@ public class CreatePuzzleButtonsAndAnimators : MonoBehaviour
             level5Anims.Add(level5Buttons[i].gameObject.GetComponent<Animator>());
             level5Buttons[i].gameObject.SetActive(false);
         }
-
+        for (int i = 0; i < level6Buttons.Count; i++)
+        {
+            level6Anims.Add(level6Buttons[i].gameObject.GetComponent<Animator>());
+            level6Buttons[i].gameObject.SetActive(false);
+        }
     }
 }

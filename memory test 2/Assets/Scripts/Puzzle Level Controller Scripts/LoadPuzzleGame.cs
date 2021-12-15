@@ -18,10 +18,10 @@ public class LoadPuzzleGame : MonoBehaviour
     private Animator puzzleLevelSelectAnim;
 
     [SerializeField]
-    private GameObject puzzleGamePanel1, puzzleGamePanel2, puzzleGamePanel3, puzzleGamePanel4, puzzleGamePanel5;
+    private GameObject puzzleGamePanel1, puzzleGamePanel2, puzzleGamePanel3, puzzleGamePanel4, puzzleGamePanel5, puzzleGamePanel6;
 
     [SerializeField]
-    private Animator puzzleGamePanelAnim1, puzzleGamePanelAnim2, puzzleGamePanelAnim3, puzzleGamePanelAnim4, puzzleGamePanelAnim5;
+    private Animator puzzleGamePanelAnim1, puzzleGamePanelAnim2, puzzleGamePanelAnim3, puzzleGamePanelAnim4, puzzleGamePanelAnim5, puzzleGamePanelAnim6;
 
     private int puzzlelevel;
 
@@ -59,6 +59,10 @@ public class LoadPuzzleGame : MonoBehaviour
                 StartCoroutine(LoadPuzzleGamePanel(puzzleGamePanel5, puzzleGamePanelAnim5));
                 break;
 
+            case 5:
+                StartCoroutine(LoadPuzzleGamePanel(puzzleGamePanel6, puzzleGamePanelAnim6));
+                break; 
+
         }
 
 
@@ -88,6 +92,10 @@ public class LoadPuzzleGame : MonoBehaviour
 
             case 4:
                 StartCoroutine(LoadPuzzleLevelSelectMenu(puzzleGamePanel5, puzzleGamePanelAnim5));
+                break;
+
+            case 5:
+                StartCoroutine(LoadPuzzleLevelSelectMenu(puzzleGamePanel6, puzzleGamePanelAnim6));
                 break;
 
         }

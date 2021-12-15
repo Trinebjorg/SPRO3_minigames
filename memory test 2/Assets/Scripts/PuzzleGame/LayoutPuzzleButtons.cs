@@ -69,6 +69,7 @@ public class LayoutPuzzleButtons : MonoBehaviour
                     {
                         btn.gameObject.SetActive(true);
                         btn.gameObject.transform.SetParent(puzzleLevel2, false);
+                        btn.image.sprite = puzzleButtonsBacksideImages[0];
 
                         if (selectedPuzzle == "Clover Puzzle")
                         {

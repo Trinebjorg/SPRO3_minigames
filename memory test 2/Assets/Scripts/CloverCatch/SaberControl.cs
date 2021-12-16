@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class SaberControl : MonoBehaviour
 {
+    public GameObject MissCountArea; 
+
     public int hits;
     private CountCollision countCollision;
 
+    [SerializeField]
+    public  CGameFinished cGameFinished; 
 
     public void OnTriggerEnter(Collider col)
     {
@@ -14,12 +18,28 @@ public class SaberControl : MonoBehaviour
         Destroy(col.gameObject);
         Debug.Log("First");
         hits++;
+        cGameFinished.HitRegister(hits);
+        //       cGameFinished.CollectStars(hits);
         Debug.Log("Count" + hits);
- //       countCollision.hitRegister(hits);
+        //       countCollision.hitRegister(hits);
     }
 
 
-
+/*
+    public void AmountStars(int stars)
+    {
+       if (hits > 5)
+        {
+            stars = 1; 
+        } else if (hits > 10)
+        {
+            stars = 2; 
+        } else
+        {
+            stars = 3; 
+        }
+    }
+*/
 
     /*
     public void OnCollisionEnter(Collision collision)

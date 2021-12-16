@@ -1,56 +1,49 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class CountCollision : MonoBehaviour
+public class CGameFinished : MonoBehaviour
 {
-    private SaberControl saberControl;
-    
-    [SerializeField]
-    private CGameFinished cGameFinished;
 
+
+
+    [SerializeField]
+    private SaberControl saberControl;
+
+    [SerializeField]
+    private CountCollision countCollision;
+
+    private int hits; 
 
     [SerializeField]
     private GameObject Spawner;
 
-    int count = 0;
-    int totalHits;
-    public void OnTriggerEnter(Collider col)
+    [SerializeField]
+    private GameObject gameFinishedPanel;
+
+    [SerializeField]
+    private Animator gameFinishedAnim, star1Anim, star2Anim, star3Anim, textAnim;
+
+
+
+
+    public void ShowGameFinishedPanel()
     {
-
-        Destroy(col.gameObject);
-        count++;
-
-        if (count == 10)
-        {
-            Spawner.SetActive(false);
-            cGameFinished.ShowGameFinishedPanel();
-     //       StartCoroutine(FakeFinnishPanel());
-
-        }
-        Debug.Log("Count " + count);
-
+        CollectStars();
     }
 
-
-/*
-    public void CheckIfGameFinished()
+    public void CollectStars()
     {
-
-        if (totalHits == 5)
+        if (hits < 5)
         {
             StartCoroutine(showPanel(1));
-        }
-        else if (totalHits == 10)
+        } else if (hits > 10)
         {
             StartCoroutine(showPanel(2));
-        }
-        else
+        } else 
         {
             StartCoroutine(showPanel(3));
         }
-
 
     }
 
@@ -93,30 +86,11 @@ public class CountCollision : MonoBehaviour
 
     }
 
-   /* public void hitRegister(int hits)
+
+
+    public void HitRegister(int hits)
     {
         this.hits = hits;
     }
-   
 
-    
-
-    IEnumerator FakeFinnishPanel()
-    {
-        spawner.SetActive(false);
-        gameFinishedPanel.SetActive(true);
-        gameFinishedAnim.Play("FadeIn");
-        yield return new WaitForSeconds(1.7f);
-        star1Anim.Play("FadeIn");
-        yield return new WaitForSeconds(.25f);
-        star2Anim.Play("FadeIn");
-        yield return new WaitForSeconds(.1f);
-        star3Anim.Play("FadeIn");
-        yield return new WaitForSeconds(.1f);
-        textAnim.Play("FadeIn");
-    }
-*/
 }
-
-
-

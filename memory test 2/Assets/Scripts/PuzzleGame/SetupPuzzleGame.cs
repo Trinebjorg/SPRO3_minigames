@@ -28,7 +28,7 @@ public class SetupPuzzleGame : MonoBehaviour
     {
         cloverPuzzleSprites = Resources.LoadAll<Sprite>("Sprites/Clover");
         marvelPuzzleSprites = Resources.LoadAll<Sprite>("Sprites/Pokemon");
-        transportPuzzleSprites = Resources.LoadAll<Sprite>("Sprites/Test");
+        transportPuzzleSprites = Resources.LoadAll<Sprite>("Sprites/Animals");
 
     }
 

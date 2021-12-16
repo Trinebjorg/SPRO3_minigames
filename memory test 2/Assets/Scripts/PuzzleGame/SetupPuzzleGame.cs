@@ -59,6 +59,10 @@ public class SetupPuzzleGame : MonoBehaviour
             case 4:
                 looper = 24;
                 break;
+
+            case 5:
+                looper = 80;
+                break;
         }
 
         switch(selectedPuzzle)

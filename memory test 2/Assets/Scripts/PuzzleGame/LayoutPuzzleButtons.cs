@@ -6,14 +6,14 @@ using UnityEngine.UI;
 public class LayoutPuzzleButtons : MonoBehaviour
 {
     [SerializeField]
-    private SetupPuzzleGame setupPuzzleGame; 
+    private SetupPuzzleGame setupPuzzleGame;
 
     [SerializeField]
-    private Transform puzzleLevel1, puzzleLevel2, puzzleLevel3, puzzleLevel4, puzzleLevel5;
+    private Transform puzzleLevel1, puzzleLevel2, puzzleLevel3, puzzleLevel4, puzzleLevel5, puzzleLevel6;
 
-    public List<Button> level1Buttons, level2Buttons, level3Buttons, level4Buttons, level5Buttons;
+    public List<Button> level1Buttons, level2Buttons, level3Buttons, level4Buttons, level5Buttons, level6Buttons;
 
-    public List<Animator> level1Anims, level2Anims, level3Anims, level4Anims, level5Anims;
+    public List<Animator> level1Anims, level2Anims, level3Anims, level4Anims, level5Anims, level6Anims;
 
     [SerializeField]
     private Sprite[] puzzleButtonsBacksideImages;
@@ -168,6 +168,33 @@ public class LayoutPuzzleButtons : MonoBehaviour
                 }
 
                 setupPuzzleGame.SetPuzzleButtonsAndAnimators(level5Buttons, level5Anims);
+
+                break;
+
+            case 5:
+                foreach (Button btn in level6Buttons)
+                {
+                    if (!btn.gameObject.activeInHierarchy)
+                    {
+                        btn.gameObject.SetActive(true);
+                        btn.gameObject.transform.SetParent(puzzleLevel6, false);
+
+                        if (selectedPuzzle == "Clover Puzzle")
+                        {
+                            btn.image.sprite = puzzleButtonsBacksideImages[0];
+                        }
+                        else if (selectedPuzzle == "Marvel Puzzle")
+                        {
+                            btn.image.sprite = puzzleButtonsBacksideImages[1];
+                        }
+                        else if (selectedPuzzle == "Transport Puzzle")
+                        {
+                            btn.image.sprite = puzzleButtonsBacksideImages[2];
+                        }
+                    }
+                }
+
+                setupPuzzleGame.SetPuzzleButtonsAndAnimators(level6Buttons, level6Anims);
 
                 break;
         }

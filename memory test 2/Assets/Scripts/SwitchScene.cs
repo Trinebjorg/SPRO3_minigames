@@ -10,7 +10,7 @@ public class SwitchScene : MonoBehaviour
 {
     
 
-    public void JumpToMemory() {
+    public void JumpToMemory    () {
 
         SceneManager.LoadScene(sceneName: "Memory_Game2");
 

@@ -5,39 +5,119 @@ using UnityEngine.UI;
 
 public class CountCollision : MonoBehaviour
 {
-    int count = 0;
-    public void OnTriggerEnter(Collider col)
-    {
-       
-        Destroy(col.gameObject);
-        count++;
-        StartCoroutine(CheckIfGameFinished(count));
-        Debug.Log("Count" + count);
-        
-    }
+    private SaberControl saberControl;
 
-    [SerializeField] 
+
+
+    [SerializeField]
     private GameObject spawner;
 
     [SerializeField]
     private GameObject gameFinishedPanel;
 
     [SerializeField]
-    private Animator gameFinishedAni, star1Ani, star2Ani, star3Ani, textAni;
+    private Animator gameFinishedAnim, star1Anim, star2Anim, star3Anim, textAnim;
 
-    public IEnumerator CheckIfGameFinished(int count)
+    int count = 0;
+    public void OnTriggerEnter(Collider col)
     {
+
+        Destroy(col.gameObject);
+        count++;
+
         if (count == 10)
         {
-            spawner.SetActive(false);
-            yield return new WaitForSeconds(1.5f);
-            gameFinishedPanel.SetActive(true);
-
-            gameFinishedAni.Play("FadeIn");
-            textAni.Play("FaceIn");
+//          CheckIfGameFinished();
+            StartCoroutine(FakeFinnishPanel());
 
         }
+        Debug.Log("Count " + count);
+
     }
+
+
+
+ /*   public void CheckIfGameFinished()
+    {
+
+        if (hits == 5)
+        {
+            StartCoroutine(showPanel(1));
+        }
+        else if (hits == 10)
+        {
+            StartCoroutine(showPanel(2));
+        }
+        else
+        {
+            StartCoroutine(showPanel(3));
+        }
+
+
+    }
+
+    IEnumerator showPanel(int stars)
+    {
+        gameFinishedPanel.SetActive(true);
+
+        gameFinishedAnim.Play("FadeIn");
+
+        yield return new WaitForSeconds(1.7f);
+
+        switch (stars)
+        {
+            case 1:
+                star1Anim.Play("FadeIn");
+                yield return new WaitForSeconds(.1f);
+                textAnim.Play("FadeIn");
+                break;
+
+            case 2:
+                star1Anim.Play("FadeIn");
+                yield return new WaitForSeconds(.25f);
+                star2Anim.Play("FadeIn");
+                yield return new WaitForSeconds(.1f);
+                textAnim.Play("FadeIn");
+                break;
+
+            case 3:
+                star1Anim.Play("FadeIn");
+                yield return new WaitForSeconds(.25f);
+                star2Anim.Play("FadeIn");
+                yield return new WaitForSeconds(.1f);
+                star3Anim.Play("FadeIn");
+                yield return new WaitForSeconds(.1f);
+                textAnim.Play("FadeIn");
+                break;
+
+        }
+
+
+    }
+
+    public void hitRegister(int hits)
+    {
+        this.hits = hits;
+    }
+
+
+    */
+
+    IEnumerator FakeFinnishPanel()
+    {
+        spawner.SetActive(false);
+        gameFinishedPanel.SetActive(true);
+        gameFinishedAnim.Play("FadeIn");
+        yield return new WaitForSeconds(1.7f);
+        star1Anim.Play("FadeIn");
+        yield return new WaitForSeconds(.25f);
+        star2Anim.Play("FadeIn");
+        yield return new WaitForSeconds(.1f);
+        star3Anim.Play("FadeIn");
+        yield return new WaitForSeconds(.1f);
+        textAnim.Play("FadeIn");
+    }
+
 }
 
 

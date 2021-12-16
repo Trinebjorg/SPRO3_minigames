@@ -112,12 +112,12 @@ public class PuzzleGameManager : MonoBehaviour
 
         switch (level) {
             case 0:
-                amountGuesses1 = 3;
+                amountGuesses1 = 5;
                 amountGuesses2 = 2;
                 break;
 
             case 1:
-                amountGuesses1 = 5;
+                amountGuesses1 = 7;
                 amountGuesses2 = 3;
                 break;
 
@@ -127,18 +127,18 @@ public class PuzzleGameManager : MonoBehaviour
                 break;
 
             case 3:
-                amountGuesses1 = 13;
+                amountGuesses1 = 15;
                 amountGuesses2 = 4; 
                 break;
 
             case 4:
-                amountGuesses1 = 16;
+                amountGuesses1 = 18;
                 amountGuesses2 = 4; 
                 break;
 
 
             case 5:
-                amountGuesses1 = 50;
+                amountGuesses1 = 52;
                 amountGuesses2 = 15;
                 break;
         }

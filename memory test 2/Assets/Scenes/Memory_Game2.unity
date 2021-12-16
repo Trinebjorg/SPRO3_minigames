@@ -605,7 +605,7 @@ Animator:
   m_GameObject: {fileID: 114464161}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 540c0bf521c36584bb4a94075cd66963, type: 2}
+  m_Controller: {fileID: 9100000, guid: b768be3edf6fc3646a7d64f173932642, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -869,7 +869,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 125, y: -25}
-  m_SizeDelta: {x: 20, y: 20}
+  m_SizeDelta: {x: 5, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &212681043
 Animator:
@@ -5354,7 +5354,7 @@ Animator:
   m_GameObject: {fileID: 1323727555}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c6ab56a5a34f6224386b9c370802782e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0e29d29493b412a4aa1ac4d856ed5fd8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5376,7 +5376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6095,7 +6095,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 50}
-  m_SizeDelta: {x: 20, y: 20}
+  m_SizeDelta: {x: 5, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1511602147
 MonoBehaviour:
@@ -7072,7 +7072,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -125, y: -25}
-  m_SizeDelta: {x: 20, y: 20}
+  m_SizeDelta: {x: 5, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1780189188
 Animator:
@@ -8505,6 +8505,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: XR Rig
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619128237327394918, guid: 8e3eee9caaec4794ca4663b42b3898b9,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.5647059
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619128237327394918, guid: 8e3eee9caaec4794ca4663b42b3898b9,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.37254903
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619128237327394918, guid: 8e3eee9caaec4794ca4663b42b3898b9,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.24705882
       objectReference: {fileID: 0}
     - target: {fileID: 5619128237826550762, guid: 8e3eee9caaec4794ca4663b42b3898b9,
         type: 3}

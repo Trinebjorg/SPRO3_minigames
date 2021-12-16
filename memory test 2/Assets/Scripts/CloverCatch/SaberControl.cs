@@ -4,16 +4,22 @@ using UnityEngine;
 
 public class SaberControl : MonoBehaviour
 {
-    int count = 0;
+    public int hits;
+    private CountCollision countCollision;
+
+
     public void OnTriggerEnter(Collider col)
     {
         Debug.Log("Leets go");
         Destroy(col.gameObject);
         Debug.Log("First");
-        count++;
-        Debug.Log("Count" + count);
-
+        hits++;
+        Debug.Log("Count" + hits);
+ //       countCollision.hitRegister(hits);
     }
+
+
+
 
     /*
     public void OnCollisionEnter(Collision collision)

@@ -167,8 +167,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a2a02a36598904abf30eaa462e723e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  head: {fileID: 1782490931}
-  feet: {fileID: 0}
 --- !u!136 &119090994
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -206,7 +204,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -548,9 +546,25 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!54 &330246676
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330246674}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &335797014
 GameObject:
   m_ObjectHideFlags: 0
@@ -1825,37 +1839,37 @@ PrefabInstance:
     - target: {fileID: 7302870258069590130, guid: 04c2a2e51f1a8a04f8cb629a103587bd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.183
+      value: -17.147142
       objectReference: {fileID: 0}
     - target: {fileID: 7302870258069590130, guid: 04c2a2e51f1a8a04f8cb629a103587bd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.766
+      value: -2.4
       objectReference: {fileID: 0}
     - target: {fileID: 7302870258069590130, guid: 04c2a2e51f1a8a04f8cb629a103587bd,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4
+      value: 3.9721985
       objectReference: {fileID: 0}
     - target: {fileID: 7302870258069590130, guid: 04c2a2e51f1a8a04f8cb629a103587bd,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.79030293
       objectReference: {fileID: 0}
     - target: {fileID: 7302870258069590130, guid: 04c2a2e51f1a8a04f8cb629a103587bd,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7302870258069590130, guid: 04c2a2e51f1a8a04f8cb629a103587bd,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.6127163
       objectReference: {fileID: 0}
     - target: {fileID: 7302870258069590130, guid: 04c2a2e51f1a8a04f8cb629a103587bd,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7302870258069590130, guid: 04c2a2e51f1a8a04f8cb629a103587bd,
         type: 3}
@@ -1865,7 +1879,7 @@ PrefabInstance:
     - target: {fileID: 7302870258069590130, guid: 04c2a2e51f1a8a04f8cb629a103587bd,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 75.572
       objectReference: {fileID: 0}
     - target: {fileID: 7302870258069590130, guid: 04c2a2e51f1a8a04f8cb629a103587bd,
         type: 3}
@@ -2391,7 +2405,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248019176}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e0cb9aa70a22847b5925ee5f067c10a9, type: 3}
   m_Name: 
@@ -2409,7 +2423,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248019176}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 14.21, y: 3.43, z: -6.96}
+  m_LocalPosition: {x: 14.21, y: 3.43, z: -7.11}
   m_LocalScale: {x: 1, y: 0.5, z: 1}
   m_Children:
   - {fileID: 1782490931}
@@ -2470,7 +2484,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248019176}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
@@ -3327,37 +3341,37 @@ PrefabInstance:
     - target: {fileID: 7039087401784181413, guid: 35e838b641f3b3e4fa12245d120b75c1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.84
+      value: -16.671041
       objectReference: {fileID: 0}
     - target: {fileID: 7039087401784181413, guid: 35e838b641f3b3e4fa12245d120b75c1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.76
+      value: -2.42
       objectReference: {fileID: 0}
     - target: {fileID: 7039087401784181413, guid: 35e838b641f3b3e4fa12245d120b75c1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.01562
+      value: -0.126894
       objectReference: {fileID: 0}
     - target: {fileID: 7039087401784181413, guid: 35e838b641f3b3e4fa12245d120b75c1,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.83515114
       objectReference: {fileID: 0}
     - target: {fileID: 7039087401784181413, guid: 35e838b641f3b3e4fa12245d120b75c1,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7039087401784181413, guid: 35e838b641f3b3e4fa12245d120b75c1,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.5500206
       objectReference: {fileID: 0}
     - target: {fileID: 7039087401784181413, guid: 35e838b641f3b3e4fa12245d120b75c1,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7039087401784181413, guid: 35e838b641f3b3e4fa12245d120b75c1,
         type: 3}
@@ -3367,7 +3381,7 @@ PrefabInstance:
     - target: {fileID: 7039087401784181413, guid: 35e838b641f3b3e4fa12245d120b75c1,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 66.737
       objectReference: {fileID: 0}
     - target: {fileID: 7039087401784181413, guid: 35e838b641f3b3e4fa12245d120b75c1,
         type: 3}
@@ -3513,37 +3527,37 @@ PrefabInstance:
     - target: {fileID: 3134638651051873284, guid: 5230a7fc7c5666144b84a387d38d3ad2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.71
+      value: -18.563705
       objectReference: {fileID: 0}
     - target: {fileID: 3134638651051873284, guid: 5230a7fc7c5666144b84a387d38d3ad2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.488
+      value: -2.12
       objectReference: {fileID: 0}
     - target: {fileID: 3134638651051873284, guid: 5230a7fc7c5666144b84a387d38d3ad2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.028198
+      value: -0.08333588
       objectReference: {fileID: 0}
     - target: {fileID: 3134638651051873284, guid: 5230a7fc7c5666144b84a387d38d3ad2,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7952733
       objectReference: {fileID: 0}
     - target: {fileID: 3134638651051873284, guid: 5230a7fc7c5666144b84a387d38d3ad2,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3134638651051873284, guid: 5230a7fc7c5666144b84a387d38d3ad2,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.6062512
       objectReference: {fileID: 0}
     - target: {fileID: 3134638651051873284, guid: 5230a7fc7c5666144b84a387d38d3ad2,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3134638651051873284, guid: 5230a7fc7c5666144b84a387d38d3ad2,
         type: 3}
@@ -3553,7 +3567,7 @@ PrefabInstance:
     - target: {fileID: 3134638651051873284, guid: 5230a7fc7c5666144b84a387d38d3ad2,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 74.638
       objectReference: {fileID: 0}
     - target: {fileID: 3134638651051873284, guid: 5230a7fc7c5666144b84a387d38d3ad2,
         type: 3}
@@ -3585,7 +3599,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -3781,7 +3795,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -3953,7 +3967,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0

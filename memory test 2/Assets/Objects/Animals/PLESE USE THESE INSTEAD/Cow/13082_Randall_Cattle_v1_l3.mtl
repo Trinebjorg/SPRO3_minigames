@@ -1,0 +1,18 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 13.01.2012 11:18:53
+
+newmtl 13082_Randall_Cattle_v1
+	Ns 21.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1.0000 1.0000 1.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.2880 0.2880 0.2880
+	Ke 0.0000 0.0000 0.0000
+	map_Ka 13082_Randall_Cattle_v1_diff.jpg
+	map_Kd 13082_Randall_Cattle_v1_diff.jpg
+	map_Ks 13082_Randall_Cattle_v1_spec.jpg
+	map_bump 13082_Randall_Cattle_v1_Normal Bump.jpg

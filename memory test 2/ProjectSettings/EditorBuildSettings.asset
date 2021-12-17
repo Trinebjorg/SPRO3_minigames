@@ -14,9 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ThemeCatch.unity
     guid: e6a00c481cb604645bbb53daa223cb10
-  - enabled: 1
-    path: Assets/Scenes/CloverCatch.unity
-    guid: c334840ec8aa0b448af46758c3fd4c88
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 65104d7d531100143a8d9066f328564b,
       type: 2}

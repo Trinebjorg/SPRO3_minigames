@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SaberControl : MonoBehaviour
+public class SaberControl : MonoBehaviour // Checking the amount of successful hits
 {
     public GameObject MissCountArea; 
 
@@ -12,15 +12,18 @@ public class SaberControl : MonoBehaviour
     [SerializeField]
     public  CGameFinished cGameFinished; 
 
-    public void OnTriggerEnter(Collider col)
+    public void OnTriggerEnter(Collider col) // Function for collision detection
     {
-        Debug.Log("Leets go");
-        Destroy(col.gameObject);
+        Debug.Log("Leets go"); // Just a check
+
+        Destroy(col.gameObject); // Destroy game objects at collision
         Debug.Log("First");
         hits++;
-        cGameFinished.HitRegister(hits);
+        cGameFinished.HitRegister(hits); // Give the amoubt of hits to field cGameF..
+
         //       cGameFinished.CollectStars(hits);
         Debug.Log("Count" + hits);
+
         //       countCollision.hitRegister(hits);
     }
 

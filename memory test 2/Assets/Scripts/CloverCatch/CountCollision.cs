@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CountCollision : MonoBehaviour
+public class CountCollision : MonoBehaviour // Class for cheching the missed game objects 
 {
     private SaberControl saberControl;
     
@@ -16,16 +16,16 @@ public class CountCollision : MonoBehaviour
 
     int count = 0;
     int totalHits;
-    public void OnTriggerEnter(Collider col)
+    public void OnTriggerEnter(Collider col) // Function for collision detection
     {
 
-        Destroy(col.gameObject);
+        Destroy(col.gameObject); // If a collision happens -> destroy Gameobject
         count++;
 
-        if (count == 10)
+        if (count == 10) // If player misses 10 objects 
         {
-            Spawner.SetActive(false);
-            cGameFinished.ShowGameFinishedPanel();
+            Spawner.SetActive(false); // Stop spawning objects 
+            cGameFinished.ShowGameFinishedPanel(); // Display the game finished panel
      //       StartCoroutine(FakeFinnishPanel());
 
         }

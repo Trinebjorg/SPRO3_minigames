@@ -24,7 +24,7 @@ public class SetupPuzzleGame : MonoBehaviour
 
     private int looper;
 
-     void Awake()
+     void Awake()   //loads all the sprites for each puzzle
     {
         cloverPuzzleSprites = Resources.LoadAll<Sprite>("Sprites/Clover");
         marvelPuzzleSprites = Resources.LoadAll<Sprite>("Sprites/Pokemon");
@@ -39,7 +39,7 @@ public class SetupPuzzleGame : MonoBehaviour
 
         int index = 0; 
 
-        switch (level)
+        switch (level)  //Depending on which level is selected the amount of cards that should load is set as the looper
         {
             case 0:
                 looper = 4;
@@ -67,8 +67,8 @@ public class SetupPuzzleGame : MonoBehaviour
 
         switch(selectedPuzzle)
         {
-            case "Clover Puzzle":
-                for(int i = 0; i < looper; i++)
+            case "Clover Puzzle":     //loads the appropriate amount of sprites for the Clover Puzzle 
+                for (int i = 0; i < looper; i++)
                 {
                     if(index == (looper/2))
                     {
@@ -81,7 +81,7 @@ public class SetupPuzzleGame : MonoBehaviour
 
                 break;
 
-            case "Marvel Puzzle":
+            case "Marvel Puzzle":     //loads the appropriate amount of sprites for the Marvel Puzzle 
                 for (int i = 0; i < looper; i++)
                 {
                     if (index == (looper / 2))
@@ -95,7 +95,7 @@ public class SetupPuzzleGame : MonoBehaviour
 
                 break;
 
-            case "Transport Puzzle":
+            case "Transport Puzzle":     //loads the appropriate amount of sprites for the Transport Puzzle 
                 for (int i = 0; i < looper; i++)
                 {
                     if (index == (looper / 2))
@@ -112,7 +112,7 @@ public class SetupPuzzleGame : MonoBehaviour
         Shuffle(gamePuzzles);
     }
 
-    void Shuffle(List<Sprite> list)
+    void Shuffle(List<Sprite> list)     //Shuffles the list of sprites in order to introduce randomness into the game
     {
         for(int i = 0; i < list.Count; i++)
         {
@@ -124,14 +124,14 @@ public class SetupPuzzleGame : MonoBehaviour
         }
     }
 
-    public void SetLevelAndPuzzle(int level, string selectedPuzzle)
+    public void SetLevelAndPuzzle(int level, string selectedPuzzle)     //Gathers info about which puzzle and which level has been selected
     {
         this.level = level;
         this.selectedPuzzle = selectedPuzzle;
 
         PrepareGameSprites();
 
-        puzzleGameManager.SetGamePuzzleSprites(this.gamePuzzles);
+        puzzleGameManager.SetGamePuzzleSprites(this.gamePuzzles);   
     }
 
     public void SetPuzzleButtonsAndAnimators(List<Button> puzzleButtons, List<Animator> puzzleButtonsAnimators)

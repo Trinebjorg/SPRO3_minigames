@@ -32,35 +32,35 @@ public class LoadPuzzleGame : MonoBehaviour
 
     public void LoadPuzzle(int level, string puzzle)
     {
-        this.puzzlelevel = level;
-        this.selectedPuzzle = puzzle;
+        this.puzzlelevel = level;   //Gathers level selected info 
+        this.selectedPuzzle = puzzle;   //Gathers puzzle selected info 
 
-        layoutPuzzleButtons.LayoutButtons (level, puzzle);
+        layoutPuzzleButtons.LayoutButtons (level, puzzle);  //sends level and puzzle info to layoutPuzzleButtons
 
         switch (puzzlelevel)
         {
             case 0:
-                StartCoroutine(LoadPuzzleGamePanel(puzzleGamePanel1, puzzleGamePanelAnim1));
+                StartCoroutine(LoadPuzzleGamePanel(puzzleGamePanel1, puzzleGamePanelAnim1));    //Fades out the level select panel and fades in level 1 panel
                 break;
             
             case 1:
-                StartCoroutine(LoadPuzzleGamePanel(puzzleGamePanel2, puzzleGamePanelAnim2));
+                StartCoroutine(LoadPuzzleGamePanel(puzzleGamePanel2, puzzleGamePanelAnim2));    //Fades out the level select panel and fades in level 2 panel
                 break;
             
             case 2:
-                StartCoroutine(LoadPuzzleGamePanel(puzzleGamePanel3, puzzleGamePanelAnim3));
+                StartCoroutine(LoadPuzzleGamePanel(puzzleGamePanel3, puzzleGamePanelAnim3));    //Fades out the level select panel and fades in level 3 panel
                 break;
             
             case 3:
-                StartCoroutine(LoadPuzzleGamePanel(puzzleGamePanel4, puzzleGamePanelAnim4));
+                StartCoroutine(LoadPuzzleGamePanel(puzzleGamePanel4, puzzleGamePanelAnim4));    //Fades out the level select panel and fades in level 4 panel
                 break;
             
             case 4:
-                StartCoroutine(LoadPuzzleGamePanel(puzzleGamePanel5, puzzleGamePanelAnim5));
+                StartCoroutine(LoadPuzzleGamePanel(puzzleGamePanel5, puzzleGamePanelAnim5));    //Fades out the level select panel and fades in level 5 panel
                 break;
 
             case 5:
-                StartCoroutine(LoadPuzzleGamePanel(puzzleGamePanel6, puzzleGamePanelAnim6));
+                StartCoroutine(LoadPuzzleGamePanel(puzzleGamePanel6, puzzleGamePanelAnim6));    //Fades out the level select panel and fades in level 6 panel
                 break; 
 
         }
@@ -75,27 +75,27 @@ public class LoadPuzzleGame : MonoBehaviour
         switch (puzzlelevel)
         {
             case 0:
-                StartCoroutine(LoadPuzzleLevelSelectMenu(puzzleGamePanel1, puzzleGamePanelAnim1));
+                StartCoroutine(LoadPuzzleLevelSelectMenu(puzzleGamePanel1, puzzleGamePanelAnim1));  //Fades out level 1 panel and fades in level Select panel 
                 break;
 
             case 1:
-                StartCoroutine(LoadPuzzleLevelSelectMenu(puzzleGamePanel2, puzzleGamePanelAnim2));
+                StartCoroutine(LoadPuzzleLevelSelectMenu(puzzleGamePanel2, puzzleGamePanelAnim2));  //Fades out level 2 panel and fades in level Select panel 
                 break;
 
             case 2:
-                StartCoroutine(LoadPuzzleLevelSelectMenu(puzzleGamePanel3, puzzleGamePanelAnim3));
+                StartCoroutine(LoadPuzzleLevelSelectMenu(puzzleGamePanel3, puzzleGamePanelAnim3));  //Fades out level 3 panel and fades in level Select panel 
                 break;
 
             case 3:
-                StartCoroutine(LoadPuzzleLevelSelectMenu(puzzleGamePanel4, puzzleGamePanelAnim4));
+                StartCoroutine(LoadPuzzleLevelSelectMenu(puzzleGamePanel4, puzzleGamePanelAnim4));  //Fades out level 4 panel and fades in level Select panel 
                 break;
 
             case 4:
-                StartCoroutine(LoadPuzzleLevelSelectMenu(puzzleGamePanel5, puzzleGamePanelAnim5));
+                StartCoroutine(LoadPuzzleLevelSelectMenu(puzzleGamePanel5, puzzleGamePanelAnim5));  //Fades out level 5 panel and fades in level Select panel 
                 break;
 
             case 5:
-                StartCoroutine(LoadPuzzleLevelSelectMenu(puzzleGamePanel6, puzzleGamePanelAnim6));
+                StartCoroutine(LoadPuzzleLevelSelectMenu(puzzleGamePanel6, puzzleGamePanelAnim6));  //Fades out level 6 panel and fades in level Select panel
                 break;
 
         }

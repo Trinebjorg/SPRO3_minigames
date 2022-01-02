@@ -22,17 +22,17 @@ public class SelectPuzzle : MonoBehaviour
 
     public void SelectedPuzzle()
     {
-        selectedPuzzle = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name;
+        selectedPuzzle = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name; // checks which puzzle button has been pressed
 
-        puzzleGameManager.SetSelectedPuzzle(selectedPuzzle);
+        puzzleGameManager.SetSelectedPuzzle(selectedPuzzle); //Sends the puzzle button info to PuzzleGameManager 
 
-        selectLevel.SetSelectedPuzzle(selectedPuzzle);
+        selectLevel.SetSelectedPuzzle(selectedPuzzle); //Sends the puzzle button Info to selectLevel 
 
         StartCoroutine(ShowPuzzlelevelSelectMenu());
 
     }
 
-    IEnumerator ShowPuzzlelevelSelectMenu()
+    IEnumerator ShowPuzzlelevelSelectMenu()    //Fades out the menu panel and fades in the select level panel 
     {
         puzzleLevelSelectPanel.SetActive(true);
         selectPuzzleMenuAnim.Play("FadeOut");

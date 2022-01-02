@@ -5,7 +5,7 @@ using System;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
-public class PuzzleGameSaver : MonoBehaviour
+public class PuzzleGameSaver : MonoBehaviour    //This feature has not yet been fully implemented
 {
     private GameData gameData;
 
@@ -22,7 +22,6 @@ public class PuzzleGameSaver : MonoBehaviour
 
     public float musicVolume;
 
-    // Start is called before the first frame update
   
     void initializeGame()
     {
@@ -30,10 +29,10 @@ public class PuzzleGameSaver : MonoBehaviour
 
         if(gameData != null)
         {
-            isTheGameStartedForTheFirstTime = gameData.GetisTheGameStartedForTheFirstTime();
+            isTheGameStartedForTheFirstTime = gameData.GetisTheGameStartedForTheFirstTime();    //Checks if the game has been started before 
         } else
         {
-            isTheGameStartedForTheFirstTime = true; 
+            isTheGameStartedForTheFirstTime = true;     //If there is no game data the game has not been started before 
         }
 
         if(isTheGameStartedForTheFirstTime)

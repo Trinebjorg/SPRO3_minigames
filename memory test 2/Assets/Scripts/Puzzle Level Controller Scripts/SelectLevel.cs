@@ -27,16 +27,15 @@ public class SelectLevel : MonoBehaviour
 
     public void SelectPuzzleLevel()
     {
-        int level = int.Parse(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name);
+        int level = int.Parse(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name); //gets the selected level 
 
-        puzzleGameManager.SetLevel(level);
+        puzzleGameManager.SetLevel(level); //sends the level info to PuzzleGameMAnager 
 
-        loadPuzzleGame.LoadPuzzle(level, selectedPuzzle);
+        loadPuzzleGame.LoadPuzzle(level, selectedPuzzle); //sends the level info to loadPuzzleGame
     }
 
 
-
-    IEnumerator ShowPuzzleSelectMenu()
+    IEnumerator ShowPuzzleSelectMenu()     //fades out puzzle level panel and fades in puzzle menu panel 
     {
         selectPuzzleMenuPanel.SetActive(true);
         selectPuzzleMenuAnim.Play("FadeIn");
@@ -45,7 +44,7 @@ public class SelectLevel : MonoBehaviour
         puzzleLevelSelectPanel.SetActive(false);
     }
 
-    public void SetSelectedPuzzle(string selectedPuzzle)
+    public void SetSelectedPuzzle(string selectedPuzzle) //gets the selected puzzle
     {
         this.selectedPuzzle = selectedPuzzle;
         Debug.Log("The selected puzzle is " + selectedPuzzle);

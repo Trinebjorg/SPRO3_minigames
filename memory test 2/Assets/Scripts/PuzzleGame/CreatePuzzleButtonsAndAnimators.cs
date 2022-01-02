@@ -68,7 +68,7 @@ public class CreatePuzzleButtonsAndAnimators : MonoBehaviour
 
     }
 
-    void CreateButtons()
+    void CreateButtons()    //INstatiates the appropriate amount of buttons depending on which level is selected 
     {
         for(int i = 0; i < puzzleGame1; i++)
         {
@@ -108,7 +108,7 @@ public class CreatePuzzleButtonsAndAnimators : MonoBehaviour
         }
     }
 
-    void GetAnimators()
+    void GetAnimators()     //Assigns the animators to the instatiated buttons 
     {
         for(int i = 0; i < level1Buttons.Count; i++)
         {

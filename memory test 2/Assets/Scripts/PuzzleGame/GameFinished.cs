@@ -24,7 +24,7 @@ public class GameFinished : MonoBehaviour
         }
     }
 
-    IEnumerator ShowPanel (int stars)
+    IEnumerator ShowPanel (int stars)       //Shouws the game finished panel with the appropriate amount of stars
     {
         gameFinishedPanel.SetActive(true);
 
@@ -34,13 +34,13 @@ public class GameFinished : MonoBehaviour
 
         switch(stars)
         {
-            case 1:
+            case 1:     //loads 1 star
                 star1Anim.Play("FadeIn");
                 yield return new WaitForSeconds(.1f);
                 textAnim.Play("FadeIn");
                 break;
 
-            case 2:
+            case 2:     //loads 2 stars 
                 star1Anim.Play("FadeIn");
                 yield return new WaitForSeconds(.25f);
                 star2Anim.Play("FadeIn");
@@ -48,7 +48,7 @@ public class GameFinished : MonoBehaviour
                 textAnim.Play("FadeIn");
                 break;
 
-            case 3:
+            case 3:     //loads 3 stars 
                 star1Anim.Play("FadeIn");
                 yield return new WaitForSeconds(.25f);
                 star2Anim.Play("FadeIn");
@@ -64,7 +64,7 @@ public class GameFinished : MonoBehaviour
 
     }
 
-    IEnumerator HidePanel()
+    IEnumerator HidePanel()     //hides the game finished panel and the stars 
     {
         gameFinishedAnim.Play("FadeOut");
 
